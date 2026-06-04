@@ -1,10 +1,10 @@
 import { createContext, useContext, useMemo } from 'react';
 import type { ReactNode } from 'react';
-import { createT, deepMerge, en } from '@eigenpal/docx-editor-i18n';
+import { createT, deepMerge, en, ru } from '@eigenpal/docx-editor-i18n';
 import type { LocaleStrings, TFunction, Translations } from '@eigenpal/docx-editor-i18n';
 
-const LocaleContext = createContext<LocaleStrings>(en);
-const LangContext = createContext<string>('en');
+const LocaleContext = createContext<LocaleStrings>(ru as LocaleStrings);
+const LangContext = createContext<string>('ru');
 
 export interface LocaleProviderProps {
   i18n?: Translations;
@@ -12,7 +12,7 @@ export interface LocaleProviderProps {
 }
 
 export function LocaleProvider({ i18n, children }: LocaleProviderProps) {
-  const lang = typeof i18n?._lang === 'string' ? i18n._lang : 'en';
+  const lang = typeof i18n?._lang === 'string' ? i18n._lang : 'ru';
   const merged = useMemo(
     () => deepMerge(en as Record<string, unknown>, i18n as Record<string, unknown> | undefined),
     [i18n]

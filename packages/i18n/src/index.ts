@@ -39,6 +39,7 @@ import heJson from '../he.json';
 import hiJson from '../hi.json';
 import plJson from '../pl.json';
 import ptBRJson from '../pt-BR.json';
+import ruJson from '../ru.json';
 import trJson from '../tr.json';
 import zhCNJson from '../zh-CN.json';
 
@@ -59,7 +60,7 @@ export type LocaleStrings = typeof enJson;
  *
  * @public
  */
-export type LocaleCode = 'en' | 'de' | 'fr' | 'he' | 'hi' | 'pl' | 'pt-BR' | 'tr' | 'zh-CN';
+export type LocaleCode = 'en' | 'de' | 'fr' | 'he' | 'hi' | 'pl' | 'pt-BR' | 'ru' | 'tr' | 'zh-CN';
 
 /** English (`en`) — the source of truth, 100% covered. @public */
 export const en: LocaleStrings = enJson;
@@ -81,6 +82,9 @@ export const pl: PartialLocaleStrings = plJson;
 
 /** Portuguese (Brazil) (`pt-BR`). Community-maintained; null leaves fall back to English. @public */
 export const ptBR: PartialLocaleStrings = ptBRJson;
+
+/** Russian (`ru`). Community-maintained; null leaves fall back to English. @public */
+export const ru: PartialLocaleStrings = ruJson;
 
 /** Turkish (`tr`). Community-maintained; null leaves fall back to English. @public */
 export const tr: PartialLocaleStrings = trJson;
@@ -110,6 +114,7 @@ export const locales: Record<LocaleCode, PartialLocaleStrings> = {
   hi,
   pl,
   'pt-BR': ptBR,
+  ru,
   tr,
   'zh-CN': zhCN,
 };
