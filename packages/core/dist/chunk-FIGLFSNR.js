@@ -1,0 +1,1 @@
+'use strict';var chunk3R7QHNI5_js=require('./chunk-3R7QHNI5.js');var l=720,s=31680;function p(e){let n=e?chunk3R7QHNI5_js.c(e):null,o=n?chunk3R7QHNI5_js.e(n,"w","defaultTabStop"):null,t=o?parseInt(chunk3R7QHNI5_js.j(o,"w","val")??"",10):NaN;return {defaultTabStop:Number.isFinite(t)&&t>0&&t<=s?t:l}}exports.a=l;exports.b=p;

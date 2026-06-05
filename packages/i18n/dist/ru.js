@@ -1,0 +1,895 @@
+"use strict";
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, { get: all[name], enumerable: true });
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+
+// src/ru.ts
+var ru_exports = {};
+__export(ru_exports, {
+  default: () => ru_default2,
+  ru: () => ru
+});
+module.exports = __toCommonJS(ru_exports);
+
+// ru.json
+var ru_default = {
+  _lang: "ru",
+  common: {
+    cancel: "Отмена",
+    insert: "Вставить",
+    apply: "Применить",
+    close: "Закрыть",
+    delete: "Удалить",
+    update: "Обновить",
+    save: "Сохранить",
+    retry: "Повторить",
+    send: "Отправить",
+    edit: "Изменить",
+    comment: "Комментарий",
+    reply: "Ответить",
+    accept: "Принять",
+    reject: "Отклонить",
+    dismiss: "Отклонить",
+    change: "Изменить",
+    clear: "Очистить",
+    px: "пкс",
+    closeDialog: "Закрыть диалог"
+  },
+  toolbar: {
+    ariaLabel: "Панель инструментов форматирования",
+    file: "Файл",
+    format: "Формат",
+    insert: "Вставка",
+    open: "Открыть",
+    openShortcut: "Ctrl+O",
+    save: "Сохранить",
+    saveShortcut: "Ctrl+S",
+    print: "Печать",
+    printShortcut: "Ctrl+P",
+    pageSetup: "Параметры страницы",
+    leftToRight: "Текст слева направо",
+    rightToLeft: "Текст справа налево",
+    image: "Изображение",
+    table: "Таблица",
+    pageBreak: "Разрыв страницы",
+    tableOfContents: "Оглавление",
+    symbol: "Символ",
+    watermark: "Водяной знак",
+    help: "Помощь",
+    reportIssue: "Сообщить о проблеме"
+  },
+  formattingBar: {
+    groups: {
+      history: "История",
+      zoom: "Масштаб",
+      styles: "Стили",
+      font: "Шрифт",
+      textFormatting: "Форматирование текста",
+      script: "Надстрочные/подстрочные знаки",
+      alignment: "Выравнивание",
+      listFormatting: "Форматирование списка",
+      image: "Изображение",
+      table: "Таблица"
+    },
+    undo: "Отменить",
+    undoShortcut: "Отменить (Ctrl+Z)",
+    redo: "Повторить",
+    redoShortcut: "Повторить (Ctrl+Y)",
+    bold: "Полужирный",
+    boldShortcut: "Полужирный (Ctrl+B)",
+    italic: "Курсив",
+    italicShortcut: "Курсив (Ctrl+I)",
+    underline: "Подчеркнутый",
+    underlineShortcut: "Подчеркнутый (Ctrl+U)",
+    strikethrough: "Зачеркнутый",
+    fontColor: "Цвет шрифта",
+    highlightColor: "Цвет выделения текста",
+    insertLink: "Вставить ссылку",
+    insertLinkShortcut: "Вставить ссылку (Ctrl+K)",
+    superscript: "Надстрочный",
+    superscriptShortcut: "Надстрочный (Ctrl+Shift+=)",
+    subscript: "Подстрочный",
+    subscriptShortcut: "Подстрочный (Ctrl+=)",
+    imageProperties: "Свойства изображения",
+    imagePropertiesShortcut: "Свойства изображения (альтернативный текст, рамка)...",
+    clearFormatting: "Очистить форматирование"
+  },
+  alignment: {
+    alignLeft: "Выровнять по левому краю",
+    alignLeftShortcut: "Ctrl+L",
+    center: "По центру",
+    centerShortcut: "Ctrl+E",
+    alignRight: "Выровнять по правому краю",
+    alignRightShortcut: "Ctrl+R",
+    justify: "По ширине",
+    justifyShortcut: "Ctrl+J"
+  },
+  lists: {
+    ariaLabel: "Форматирование списка",
+    typeAriaLabel: "Тип списка",
+    indentationAriaLabel: "Отступ списка",
+    bulletList: "Маркированный список",
+    numberedList: "Нумерованный список",
+    decreaseIndent: "Уменьшить отступ",
+    increaseIndent: "Увеличить отступ"
+  },
+  lineSpacing: {
+    single: "Одинарный",
+    double: "Двойной",
+    lineSpacingTitle: "Межстрочный интервал: {label}",
+    paragraphSpacing: "Интервал между абзацами"
+  },
+  styles: {
+    selectAriaLabel: "Выберите стиль абзаца",
+    normalText: "Обычный текст",
+    title: "Заголовок",
+    subtitle: "Подзаголовок",
+    heading1: "Заголовок 1",
+    heading2: "Заголовок 2",
+    heading3: "Заголовок 3"
+  },
+  font: {
+    selectAriaLabel: "Выберите семейство шрифта",
+    sansSerif: "Без засечек",
+    serif: "С засечками",
+    monospace: "Моноширинный"
+  },
+  fontSize: {
+    decrease: "Уменьшить размер шрифта",
+    increase: "Увеличить размер шрифта",
+    label: "Размер шрифта",
+    listLabel: "Размеры шрифта"
+  },
+  zoom: {
+    ariaLabel: "Масштаб: {label}"
+  },
+  colorPicker: {
+    ariaLabel: "Палитра цветов {type}",
+    highlightColors: "Цвета выделения",
+    customColor: "Другой цвет",
+    noColor: "Нет цвета",
+    automatic: "Авто",
+    themeColors: "Цвета темы",
+    standardColors: "Стандартные цвета",
+    colors: {
+      black: "Черный",
+      darkRed: "Темно-красный",
+      red: "Красный",
+      orange: "Оранжевый",
+      yellow: "Желтый",
+      darkYellow: "Темно-желтый",
+      green: "Зеленый",
+      darkGreen: "Темно-зеленый",
+      teal: "Сине-зеленый",
+      darkTeal: "Темно-сине-зеленый",
+      blue: "Синий",
+      darkBlue: "Темно-синий",
+      purple: "Фиолетовый",
+      darkPurple: "Темно-фиолетовый",
+      brown: "Коричневый",
+      grey50: "Серый 50%",
+      grey25: "Серый 25%",
+      grey10: "Серый 10%",
+      white: "Белый",
+      lightRed: "Светло-красный",
+      lightOrange: "Светло-оранжевый",
+      lightYellow: "Светло-желтый",
+      lightGreen: "Светло-зеленый",
+      lightBlue: "Светло-синий",
+      lightPurple: "Светло-фиолетовый",
+      pink: "Розовый",
+      rose: "Розовый",
+      gold: "Золотой",
+      aqua: "Морская волна",
+      lavender: "Лавандовый",
+      silver: "Серебряный",
+      darkOrange: "Темно-оранжевый",
+      darkGray: "Темно-серый",
+      gray: "Серый",
+      cyan: "Циан",
+      magenta: "Пурпурный",
+      paleGreen: "Бледно-зеленый",
+      lightCyan: "Светло-циановый",
+      skyBlue: "Небесно-голубой",
+      lightBlue2: "Светло-синий 2",
+      lightMagenta: "Светло-пурпурный",
+      brightGreen: "Ярко-зеленый",
+      violet: "Фиолетовый"
+    }
+  },
+  dialogs: {
+    findReplace: {
+      titleFind: "Найти",
+      titleFindReplace: "Найти и заменить",
+      findLabel: "Найти:",
+      findPlaceholder: "Введите текст для поиска...",
+      findAriaLabel: "Поиск текста",
+      findPrevious: "Найти предыдущее",
+      findPreviousTitle: "Найти предыдущее (Shift+Enter)",
+      findNext: "Найти следующее",
+      findNextTitle: "Найти следующее (Enter)",
+      matchCount: "{current} из {total} совпадений",
+      noResults: "Совпадений не найдено",
+      replaceLabel: "Заменить на:",
+      replacePlaceholder: "Введите текст для замены...",
+      replaceAriaLabel: "Текст замены",
+      replaceButton: "Заменить",
+      replaceCurrentTitle: "Заменить текущее совпадение",
+      replaceAllButton: "Заменить все",
+      replaceAllTitle: "Заменить все совпадения",
+      matchCase: "Учитывать регистр",
+      wholeWords: "Только слово целиком",
+      matchesFound: "{total} совпадений",
+      toggleReplace: "+ Замена"
+    },
+    hyperlink: {
+      titleEdit: "Изменить гиперссылку",
+      titleInsert: "Вставить гиперссылку",
+      tabWebAddress: "Веб-адрес",
+      tabBookmark: "Закладка",
+      urlLabel: "URL",
+      urlPlaceholder: "https://example.com",
+      urlHint: "Введите веб-адрес, email (mailto:) или телефон (tel:)",
+      bookmarkLabel: "Закладка",
+      bookmarkPlaceholder: "Выберите закладку...",
+      displayTextLabel: "Отображаемый текст",
+      displayTextPlaceholder: "Текст для отображения (необязательно)",
+      displayTextHint: "Оставьте пустым, чтобы использовать выделенный текст",
+      tooltipLabel: "Всплывающая подсказка (необязательно)",
+      tooltipPlaceholder: "Текст, отображаемый при наведении",
+      removeLink: "Удалить ссылку",
+      invalidUrl: "Пожалуйста, введите действительный URL",
+      urlRequired: "Требуется URL"
+    },
+    insertTable: {
+      title: "Вставить таблицу",
+      hoverToSelect: "Наведите для выбора размера",
+      tableSize: "Таблица {cols} x {rows}",
+      orSpecifySize: "или укажите размер",
+      rowsLabel: "Строк:",
+      columnsLabel: "Столбцов:",
+      insertButton: "Вставить таблицу",
+      sizeSelector: "Выбор размера таблицы",
+      columnWidthLabel: "Ширина столбца",
+      fixedWidth: "Фиксированная",
+      autofit: "Автоподбор по содержимому",
+      tableStyleLabel: "Стиль таблицы",
+      validationHint: "Строки: {minRows}-{maxRows}, Столбцы: {minCols}-{maxCols}"
+    },
+    watermark: {
+      title: "Водяной знак",
+      noWatermark: "Без водяного знака",
+      picture: "Рисунок в качестве водяного знака",
+      text: "Текст водяного знака",
+      selectPicture: "Выберите рисунок...",
+      scale: "Масштаб",
+      washout: "Размытие",
+      textLabel: "Текст",
+      fontLabel: "Шрифт",
+      sizeLabel: "Размер",
+      sizeAuto: "Авто",
+      colorLabel: "Цвет",
+      layoutLabel: "Макет",
+      diagonal: "Диагональный",
+      horizontal: "Горизонтальный",
+      semitransparent: "Полупрозрачный",
+      presetLabel: "Готовый",
+      applyButton: "Применить",
+      cancelButton: "Отмена"
+    },
+    splitCell: {
+      title: "Разделить ячейки",
+      description: "Укажите количество строк и столбцов, на которое нужно разделить выбранную ячейку.",
+      rowsLabel: "Строк:",
+      columnsLabel: "Столбцов:",
+      currentMinimum: "Минимум от текущего диапазона: {rows} строка(и) x {cols} столбец(а)",
+      minValue: "Используйте как минимум {rows} строку(и) и {cols} столбец(а).",
+      notOneByOne: "Выберите как минимум две результирующие ячейки."
+    },
+    insertImage: {
+      title: "Вставить изображение",
+      uploadAriaLabel: "Нажмите или перетащите изображение",
+      uploadText: "Нажмите, чтобы выбрать, или перетащите изображение",
+      uploadSubtext: "PNG, JPG, GIF до 10 МБ",
+      dimensions: "Размеры",
+      widthLabel: "Ширина:",
+      heightLabel: "Высота:",
+      aspectRatioLocked: "Сохранять пропорции",
+      aspectRatioUnlocked: "Пропорции не сохранены",
+      altTextLabel: "Альтернативный текст (необязательно)",
+      altTextPlaceholder: "Опишите изображение для людей с нарушениями зрения",
+      insertButton: "Вставить изображение",
+      invalidFile: "Пожалуйста, выберите действительный файл изображения",
+      fileTooLarge: "Файл изображения слишком большой (макс. 10 МБ)",
+      readFailed: "Не удалось прочитать файл изображения",
+      loadFailed: "Не удалось загрузить изображение",
+      preview: "Предпросмотр"
+    },
+    insertSymbol: {
+      title: "Вставить символ",
+      searchPlaceholder: "Поиск символов (символ или Юникод)...",
+      noResultsEmpty: "Символы не найдены",
+      noResults: 'Символы для "{query}" не найдены',
+      decimal: "Десятичный: {value}",
+      recent: "Недавние:",
+      categories: {
+        common: "Часто используемые",
+        arrows: "Стрелки",
+        math: "Математические",
+        greek: "Греческие",
+        shapes: "Фигуры",
+        punctuation: "Пунктуация",
+        currency: "Валюты",
+        music: "Музыкальные",
+        emoji: "Эмодзи"
+      }
+    },
+    imageProperties: {
+      title: "Свойства изображения",
+      altText: "Альтернативный текст",
+      altTextPlaceholder: "Опишите это изображение для людей с нарушениями зрения...",
+      border: "Рамка",
+      width: "Ширина",
+      style: "Стиль",
+      color: "Цвет",
+      preview: "Предпросмотр",
+      textWrapping: "Обтекание текстом",
+      dimensions: "Размеры",
+      widthLabel: "Ширина:",
+      heightLabel: "Высота:",
+      lockAspectRatio: "Сохранять пропорции",
+      wrapOptions: {
+        inline: "В тексте",
+        wrapRight: "Обтекание, плавать слева",
+        wrapLeft: "Обтекание, плавать справа",
+        topAndBottom: "Сверху и снизу",
+        behind: "За текстом",
+        inFront: "Перед текстом"
+      },
+      borderStyles: {
+        solid: "Сплошная",
+        dashed: "Штриховая",
+        dotted: "Точечная",
+        double: "Двойная",
+        groove: "Желобок",
+        ridge: "Выступ",
+        inset: "Вдавленная",
+        outset: "Выдавленная"
+      }
+    },
+    imagePosition: {
+      title: "Положение изображения",
+      horizontal: "Горизонтальное",
+      vertical: "Вертикальное",
+      position: "Положение",
+      alignment: "Выравнивание",
+      offset: "Смещение",
+      offsetPx: "Смещение (пкс)",
+      align: "Выровнять",
+      relativeTo: "Относительно",
+      alignOptions: {
+        left: "По левому краю",
+        center: "По центру",
+        right: "По правому краю",
+        top: "По верхнему краю",
+        bottom: "По нижнему краю"
+      },
+      relativeOptions: {
+        page: "Страницы",
+        column: "Колонки",
+        margin: "Поля",
+        character: "Символа",
+        paragraph: "Абзаца",
+        line: "Строки"
+      }
+    },
+    pageSetup: {
+      title: "Параметры страницы",
+      pageSize: "РАЗМЕР СТРАНИЦЫ",
+      sizeLabel: "Размер",
+      custom: "Нестандартный",
+      orientation: "Ориентация",
+      portrait: "Книжная",
+      landscape: "Альбомная",
+      margins: "ПОЛЯ",
+      top: "Верхнее",
+      bottom: "Нижнее",
+      left: "Левое",
+      right: "Правое",
+      pageSizes: {
+        letter: "Letter (8.5″ × 11″)",
+        a4: "A4 (210 × 297 мм)",
+        legal: "Legal (8.5″ × 14″)",
+        a3: "A3 (297 × 420 мм)",
+        a5: "A5 (148 × 210 мм)",
+        b5: "B5 (176 × 250 мм)",
+        executive: "Executive (184 × 267 мм)"
+      }
+    },
+    tableProperties: {
+      title: "Свойства таблицы",
+      widthType: "Тип ширины",
+      widthLabel: "Ширина",
+      alignmentLabel: "Выравнивание",
+      widthTypes: {
+        auto: "Авто",
+        fixed: "Фиксированная (твипах)",
+        percentage: "Проценты"
+      },
+      units: {
+        fiftiethsPercent: "(50-е доли %)",
+        twips: "тв"
+      },
+      alignOptions: {
+        left: "По левому краю",
+        center: "По центру",
+        right: "По правому краю"
+      }
+    },
+    pasteSpecial: {
+      title: "Специальная вставка",
+      keepFormatting: "Сохранить исходное форматирование",
+      keepFormattingDescription: "Вставить с исходным форматированием",
+      keepFormattingShortcut: "Ctrl+V",
+      plainText: "Вставить как обычный текст",
+      plainTextDescription: "Вставить без форматирования",
+      plainTextShortcut: "Ctrl+Shift+V",
+      readingClipboard: "Чтение буфера обмена...",
+      preview: "Предпросмотр:",
+      noContent: "Нет содержимого для вставки",
+      clipboardError: "Не удалось прочитать буфер обмена. Используйте Ctrl+V для вставки."
+    },
+    footnoteProperties: {
+      title: "Свойства сносок и концевых примечаний",
+      footnotes: "Сноски",
+      endnotes: "Концевые примечания",
+      position: "Положение",
+      numberFormat: "Формат номера",
+      startAt: "Начать с",
+      numbering: "Нумерация",
+      footnotePositions: {
+        bottomOfPage: "Внизу страницы",
+        belowText: "Под текстом"
+      },
+      endnotePositions: {
+        endOfDocument: "В конце документа",
+        endOfSection: "В конце раздела"
+      },
+      numberingOptions: {
+        continuous: "Непрерывная",
+        restartSection: "Перезапускать в каждом разделе",
+        restartPage: "Перезапускать на каждой странице"
+      },
+      formats: {
+        decimal: "1, 2, 3, ...",
+        lowerRoman: "i, ii, iii, ...",
+        upperRoman: "I, II, III, ...",
+        lowerAlpha: "a, b, c, ...",
+        upperAlpha: "A, B, C, ...",
+        symbols: "*, †, ‡, ..."
+      }
+    },
+    keyboardShortcuts: {
+      ariaLabel: "Сочетания клавиш",
+      searchPlaceholder: "Поиск сочетаний...",
+      categories: {
+        editing: "Редактирование",
+        formatting: "Форматирование",
+        navigation: "Навигация",
+        clipboard: "Буфер обмена",
+        selection: "Выделение",
+        view: "Вид",
+        file: "Файл",
+        other: "Другое"
+      },
+      shortcuts: {
+        save: "Сохранить",
+        saveDescription: "Сохранить документ",
+        print: "Печать",
+        printDescription: "Печать документа",
+        undo: "Отменить",
+        undoDescription: "Отменить последнее действие",
+        redo: "Вернуть",
+        redoDescription: "Вернуть последнее отмененное действие",
+        delete: "Удалить",
+        deleteDescription: "Удалить выделенный текст",
+        find: "Найти",
+        findDescription: "Поиск текста в документе",
+        findReplace: "Найти и заменить",
+        findReplaceDescription: "Поиск и замена текста",
+        cut: "Вырезать",
+        cutDescription: "Вырезать выделенный текст",
+        copy: "Копировать",
+        copyDescription: "Копировать выделенный текст",
+        paste: "Вставить",
+        pasteDescription: "Вставить из буфера обмена",
+        pastePlainText: "Вставить как обычный текст",
+        pastePlainTextDescription: "Вставить без форматирования",
+        bold: "Полужирный",
+        boldDescription: "Включить/выключить полужирное начертание",
+        italic: "Курсив",
+        italicDescription: "Включить/выключить курсив",
+        underline: "Подчеркнутый",
+        underlineDescription: "Включить/выключить подчеркивание",
+        strikethrough: "Зачеркнутый",
+        strikethroughDescription: "Включить/выключить зачеркивание",
+        subscript: "Подстрочный",
+        subscriptDescription: "Включить/выключить подстрочный знак",
+        superscript: "Надстрочный",
+        superscriptDescription: "Включить/выключить надстрочный знак",
+        alignLeft: "Выровнять по левому краю",
+        alignLeftDescription: "Выровнять абзац по левому краю",
+        alignCenter: "По центру",
+        alignCenterDescription: "Выровнять абзац по центру",
+        alignRight: "Выровнять по правому краю",
+        alignRightDescription: "Выровнять абзац по правому краю",
+        justify: "По ширине",
+        justifyDescription: "Выровнять абзац по ширине",
+        increaseIndent: "Увеличить отступ",
+        increaseIndentDescription: "Увеличить отступ абзаца",
+        decreaseIndent: "Уменьшить отступ",
+        decreaseIndentDescription: "Уменьшить отступ абзаца",
+        selectAll: "Выделить все",
+        selectAllDescription: "Выделить все содержимое",
+        selectWord: "Выделить слово",
+        selectWordDescription: "Выделить текущее слово",
+        selectParagraph: "Выделить абзац",
+        selectParagraphDescription: "Выделить текущий абзац",
+        extendSelectionByWord: "Расширить выделение на слово",
+        extendSelectionByWordDescription: "Расширить выделение до следующего/предыдущего слова",
+        extendSelectionToLineEdge: "Расширить выделение до края строки",
+        extendSelectionToLineEdgeDescription: "Расширить выделение до начала/конца строки",
+        moveByWord: "Переместить по словам",
+        moveByWordDescription: "Переместить курсор к следующему/предыдущему слову",
+        moveToLineStart: "Переместить в начало строки",
+        moveToLineStartDescription: "Переместить курсор в начало строки",
+        moveToLineEnd: "Переместить в конец строки",
+        moveToLineEndDescription: "Переместить курсор в конец строки",
+        moveToDocumentStart: "Переместить в начало документа",
+        moveToDocumentStartDescription: "Переместить курсор в начало документа",
+        moveToDocumentEnd: "Переместить в конец документа",
+        moveToDocumentEndDescription: "Переместить курсор в конец документа",
+        pageUp: "Страница вверх",
+        pageUpDescription: "Прокрутить на одну страницу вверх",
+        pageDown: "Страница вниз",
+        pageDownDescription: "Прокрутить на одну страницу вниз",
+        zoomIn: "Увеличить масштаб",
+        zoomInDescription: "Увеличить масштаб",
+        zoomOut: "Уменьшить масштаб",
+        zoomOutDescription: "Уменьшить масштаб",
+        resetZoom: "Сбросить масштаб",
+        resetZoomDescription: "Сбросить масштаб до 100%",
+        keyboardShortcuts: "Сочетания клавиш",
+        keyboardShortcutsDescription: "Показать это диалоговое окно справки",
+        insertLink: "Вставить ссылку",
+        insertLinkDescription: "Вставить или изменить гиперссылку"
+      },
+      noResults: 'Не найдено сочетаний, соответствующих "{query}"',
+      pressEscToClose: "Нажмите {key}, чтобы закрыть",
+      or: "или"
+    }
+  },
+  comments: {
+    resolved: "Решен",
+    resolve: "Решить",
+    reopen: "Открыть снова",
+    moreOptions: "Дополнительные параметры",
+    unknown: "Неизвестный",
+    addComment: "Добавить комментарий...",
+    replyPlaceholder: "Ответьте или упомяните других с помощью @",
+    replyCount: "{count, plural, one {# ответ} few {# ответа} many {# ответов} other {# ответа}}"
+  },
+  trackedChanges: {
+    unknown: "Неизвестно",
+    replaced: "Заменено",
+    with: "на",
+    added: "Добавлено",
+    deleted: "Удалено"
+  },
+  revisions: {
+    paragraphMarkInserted: "Вставлен разрыв абзаца",
+    paragraphMarkDeleted: "Удален разрыв абзаца",
+    paragraphPropertiesChanged: "Изменены свойства абзаца",
+    rowInserted: "Вставлена строка",
+    rowDeleted: "Удалена строка",
+    rowPropertiesChanged: "Изменены свойства строки",
+    cellInserted: "Вставлена ячейка",
+    cellDeleted: "Удалена ячейка",
+    cellMerged: "Объединены ячейки",
+    cellPropertiesChanged: "Изменены свойства ячейки",
+    tablePropertiesChanged: "Изменены свойства таблицы",
+    tableInserted: "Вставлена таблица",
+    tableDeleted: "Удалена таблица"
+  },
+  contextMenu: {
+    ariaLabel: "Меню действий ИИ",
+    textMenuAriaLabel: "Меню редактирования текста",
+    customPromptPlaceholder: "Введите свой запрос...",
+    cut: "Вырезать",
+    cutShortcut: "Ctrl+X",
+    copy: "Копировать",
+    copyShortcut: "Ctrl+C",
+    paste: "Вставить",
+    pasteShortcut: "Ctrl+V",
+    pastePlainText: "Вставить как обычный текст",
+    pastePlainTextShortcut: "Ctrl+Shift+V",
+    delete: "Удалить",
+    deleteShortcut: "Del",
+    selectAll: "Выделить все",
+    selectAllShortcut: "Ctrl+A",
+    selected: "Выделено:",
+    aiActions: {
+      askAi: "Спросить ИИ",
+      rewrite: "Переписать",
+      expand: "Расширить",
+      summarize: "Сжать",
+      translate: "Перевести",
+      explain: "Объяснить",
+      fixGrammar: "Исправить грамматику",
+      makeFormal: "Сделать официальным",
+      makeCasual: "Сделать разговорным",
+      custom: "Свой запрос"
+    }
+  },
+  documentOutline: {
+    ariaLabel: "Структура документа",
+    closeAriaLabel: "Закрыть структуру",
+    closeTitle: "Закрыть структуру",
+    title: "Структура",
+    noHeadings: "Заголовки не найдены. Добавьте заголовки в документ, чтобы они отображались здесь."
+  },
+  sidebar: {
+    ariaLabel: "Боковая панель примечаний"
+  },
+  viewer: {
+    pageIndicator: "{current} из {total}"
+  },
+  titleBar: {
+    untitled: "Безымянный",
+    documentNameAriaLabel: "Имя документа",
+    menuBarAriaLabel: "Строка меню"
+  },
+  errors: {
+    loadingDocument: "Загрузка документа...",
+    noDocumentLoaded: "Документ не загружен",
+    failedToLoad: "Не удалось загрузить документ",
+    unableToParse: "Не удалось разобрать документ",
+    somethingWentWrong: "Что-то пошло не так",
+    errorDescription: "Произошла ошибка при рендеринге этого компонента. Пожалуйста, попробуйте снова или обратитесь в службу поддержки, если проблема повторяется.",
+    errorLabel: "Ошибка:",
+    componentStack: "Стек компонентов:",
+    tryAgain: "Попробовать снова",
+    showDetails: "Показать подробности",
+    hideDetails: "Скрыть подробности",
+    unsavedChanges: "У вас есть несохраненные изменения. Вы уверены, что хотите уйти?"
+  },
+  table: {
+    insertRowAbove: "Вставить строку выше",
+    insertRowBelow: "Вставить строку ниже",
+    insertColumnLeft: "Вставить столбец слева",
+    insertColumnRight: "Вставить столбец справа",
+    deleteRow: "Удалить строку",
+    deleteColumn: "Удалить столбец",
+    deleteTable: "Удалить таблицу",
+    mergeCells: "Объединить ячейки",
+    splitCell: "Разделить ячейку",
+    editingTools: "Инструменты редактирования таблицы",
+    label: "Таблица:",
+    cellFillColor: "Цвет заливки ячейки",
+    borderColor: "Цвет границы",
+    borderWidth: "Ширина границы",
+    unknownAction: "Неизвестное действие",
+    borders: {
+      all: "Все границы",
+      outside: "Внешние границы",
+      inside: "Внутренние границы",
+      none: "Без границ",
+      remove: "Удалить границы",
+      top: "Верхняя граница",
+      bottom: "Нижняя граница",
+      left: "Левая граница",
+      right: "Правая граница",
+      styleAriaLabel: "Стиль границы",
+      tooltip: "Границы"
+    },
+    moreOptions: "Дополнительные параметры таблицы",
+    styles: {
+      title: "Стили таблиц",
+      label: "Стили",
+      normalTable: "Обычная таблица",
+      tableGrid: "Сетка таблицы",
+      gridTableLight: "Светлая сетка",
+      plainTable1: "Простая таблица 1",
+      plainTable2: "Простая таблица 2",
+      plainTable3: "Простая таблица 3",
+      plainTable4: "Простая таблица 4",
+      gridTable1Light: "Сетка таблицы 1 светлая",
+      gridTable4Accent1: "Сетка таблицы 4 акцент 1",
+      gridTable5Dark: "Сетка таблицы 5 темная",
+      listTable3Accent2: "Список таблицы 3 акцент 2",
+      listTable4Accent3: "Список таблицы 4 акцент 3",
+      gridTable4Accent5: "Сетка таблицы 4 акцент 5",
+      gridTable4Accent6: "Сетка таблицы 4 акцент 6"
+    }
+  },
+  tableAdvanced: {
+    verticalAlignment: "Вертикальное выравнивание",
+    top: "По верхнему краю",
+    middle: "По центру",
+    bottom: "По нижнему краю",
+    cellMargins: "Поля ячейки",
+    textDirection: "Направление текста",
+    textDirections: {
+      horizontal: "Горизонтальный (СЛЕВА-НАПРАВО)",
+      verticalRL: "Вертикальный (сверху-вниз, СПРАВА-НАЛЕВО)",
+      verticalLR: "Вертикальный (снизу-вверх, СЛЕВА-НАПРАВО)"
+    },
+    toggleNoWrap: "Переключить запрет переноса",
+    rowHeight: "Высота строки",
+    heightRules: {
+      auto: "Авто",
+      atLeast: "Не менее",
+      exact: "Точно"
+    },
+    rule: "Правило",
+    height: "Высота",
+    toggleHeaderRow: "Переключить строку заголовка",
+    distributeColumns: "Распределить столбцы равномерно",
+    autoFit: "Автоподбор по содержимому",
+    tableProperties: "Свойства таблицы...",
+    tableAlignment: "Выравнивание таблицы",
+    alignTableLeft: "Выровнять таблицу по левому краю",
+    alignTableCenter: "Выровнять таблицу по центру",
+    alignTableRight: "Выровнять таблицу по правому краю",
+    tableOptionsMenu: "Меню параметров таблицы",
+    tableOptions: "Параметры таблицы"
+  },
+  imageTransform: {
+    tooltip: "Трансформация",
+    rotateClockwise: "Повернуть по часовой стрелке",
+    rotateCounterClockwise: "Повернуть против часовой стрелки",
+    flipHorizontal: "Отразить по горизонтали",
+    flipVertical: "Отразить по вертикали"
+  },
+  imageWrap: {
+    inline: "В тексте",
+    floatLeft: "Квадрат слева",
+    floatRight: "Квадрат справа",
+    topAndBottom: "Сверху и снизу",
+    behindText: "За текстом",
+    inFrontOfText: "Перед текстом",
+    tooltipPrefix: "Обтекание: {label}",
+    menu: {
+      inLineWithText: "В тексте",
+      squareLeft: "Квадрат слева",
+      squareRight: "Квадрат справа",
+      behindText: "За текстом",
+      inFrontOfText: "Перед текстом",
+      ariaLabel: "Параметры макета изображения",
+      imageProperties: "Свойства изображения…"
+    },
+    menuDesc: {
+      inLineWithText: "Изображение находится в строке как символ",
+      squareLeft: "Изображение плавает слева, текст обтекает справа",
+      squareRight: "Изображение плавает справа, текст обтекает слева",
+      behindText: "Изображение находится за основным текстом",
+      inFrontOfText: "Изображение находится поверх основного текста"
+    }
+  },
+  responsePreview: {
+    loading: "{action}...",
+    result: "Результат {action}",
+    closeEsc: "Закрыть (Esc)",
+    editPrompt: "Отредактируйте результат перед принятием:",
+    changes: "Изменения:",
+    original: "Было:",
+    new: "Стало:",
+    cancelEdit: "Отменить редактирование"
+  },
+  commentMarkers: {
+    resolvedComment: "Решенный комментарий",
+    comment: "Комментарий"
+  },
+  editor: {
+    toggleCommentsSidebar: "Переключить боковую панель комментариев",
+    showDocumentOutline: "Показать структуру документа",
+    editing: "Редактирование",
+    editingDescription: "Редактировать документ напрямую",
+    suggesting: "Предложение",
+    suggestingDescription: "Изменения становятся предложениями",
+    viewing: "Просмотр",
+    viewingDescription: "Только чтение, без правок",
+    failedToParse: "Не удалось разобрать документ",
+    linkRemoved: "Ссылка удалена",
+    linkCopied: "Ссылка скопирована в буфер обмена",
+    failedToSave: "Не удалось сохранить документ"
+  },
+  hyperlinkPopup: {
+    displayTextPlaceholder: "Отображаемый текст",
+    urlPlaceholder: "https://example.com",
+    copyLink: "Копировать ссылку",
+    editLink: "Изменить ссылку",
+    removeLink: "Удалить ссылку"
+  },
+  headerFooter: {
+    header: "Верхний колонтитул",
+    footer: "Нижний колонтитул",
+    options: "Параметры",
+    insertPageNumber: "Вставить номер текущей страницы",
+    insertTotalPages: "Вставить общее количество страниц",
+    remove: "Удалить {label}",
+    closeEditing: "Закрыть редактирование {label}"
+  },
+  image: {
+    placeholder: "Заполнитель изображения",
+    placeholderText: "[Изображение]",
+    editableAriaLabel: "Редактируемое изображение"
+  },
+  imageOverlay: {
+    rotate: "Повернуть",
+    imageProperties: "Свойства изображения",
+    deleteImage: "Удалить изображение"
+  },
+  ruler: {
+    horizontal: "Горизонтальная линейка",
+    vertical: "Вертикальная линейка",
+    firstLineIndent: "Отступ первой строки",
+    leftIndent: "Отступ слева",
+    rightIndent: "Отступ справа",
+    topMargin: "Верхнее поле",
+    bottomMargin: "Нижнее поле"
+  },
+  print: {
+    label: "Печать",
+    allPages: "Все ({totalPages} стр.)",
+    singlePage: "Страница {start}",
+    pageRange: "Страницы {start}-{end}"
+  },
+  unsaved: {
+    unsaved: "Не сохранено",
+    saved: "Сохранено",
+    unsavedTitle: "Документ содержит несохраненные изменения",
+    savedTitle: "Все изменения сохранены",
+    unsavedAriaLabel: "Несохраненные изменения",
+    savedAriaLabel: "Все изменения сохранены"
+  },
+  loading: {
+    label: "Загрузка"
+  },
+  agentPanel: {
+    defaultTitle: "Ассистент",
+    toggle: "Открыть ассистента",
+    close: "Закрыть панель",
+    resizeHandle: "Изменение размера панели ассистента",
+    thinking: "Ассистент думает",
+    composerPlaceholder: "Спросите ассистента…",
+    send: "Отправить",
+    timeline: {
+      working: "Работа… {count, plural, one {# шаг} few {# шага} many {# шагов} other {# шага}}",
+      summary: "{count, plural, one {# шаг} few {# шага} many {# шагов} other {# шага}}",
+      earlier: "+ {count, plural, one {# предыдущий шаг} few {# предыдущих шага} many {# предыдущих шагов} other {# предыдущего шага}}"
+    }
+  }
+};
+
+// src/ru.ts
+var ru = ru_default;
+var ru_default2 = ru;
+// Annotate the CommonJS export names for ESM import in node:
+0 && (module.exports = {
+  ru
+});
