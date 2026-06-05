@@ -1,0 +1,25 @@
+# Ignore everything by default
+*
+
+# Allow only dist folders from packages
+!packages/*/
+!packages/*/*/
+!packages/*/dist/
+!packages/*/dist/**
+
+# Ignore examples completely
+examples/
+
+# Allow package.json files in packages root
+!packages/*/package.json
+
+# Ignore all other files
+e2e/
+docs/
+scripts/
+node_modules/
+.git/
+.github/
+.husky/
+.changeset/
+.vercel/
