@@ -1,7 +1,3 @@
-/**
- * @packageDocumentation
- * @public
- */
 import { Node } from 'prosemirror-model';
 
 /**

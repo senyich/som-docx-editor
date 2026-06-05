@@ -1,11 +1,3 @@
-/**
- * Pointer Event Handler
- *
- * Centralized input handling for all pointer events.
- * Provides single source of truth for click, drag, and focus management.
- * @packageDocumentation
- * @public
- */
 import { ClickPositionResolver } from './ClickPositionResolver.mjs';
 
 /**

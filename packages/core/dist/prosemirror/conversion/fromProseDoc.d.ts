@@ -1,23 +1,3 @@
-/**
- * ProseMirror to Document Conversion
- *
- * Converts a ProseMirror document back to our Document type.
- * This enables round-trip editing: DOCX -> Document -> PM -> Document -> DOCX
- *
- * Key responsibilities:
- * - Coalesce consecutive text with same marks into single Runs
- * - Preserve paragraph attributes (paraId, textId, formatting)
- * - Handle marks -> TextFormatting conversion
- *
- * This file owns the top-level orchestrator (`fromProseDoc`) plus block
- * extraction and the page-break paragraph factory. Per-domain converters
- * live under ./fromProseDoc/ (marks, runs, paragraph, tables, textbox).
- * The deep import `@eigenpal/.../prosemirror/conversion/fromProseDoc` is
- * a tsup entry consumed by the Vue adapter — the barrel re-exports
- * preserve that surface.
- * @packageDocumentation
- * @public
- */
 import { Node } from 'prosemirror-model';
 import { Document } from '../../types/document.js';
 import { B as BlockContent } from '../../content-C8fc_tL6.js';

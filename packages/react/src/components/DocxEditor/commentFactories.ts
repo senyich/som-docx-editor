@@ -1,4 +1,4 @@
-import type { Comment } from '@eigenpal/docx-editor-core/types/content';
+import type { Comment } from '@som/docx-editor-core/types/content';
 
 /**
  * Module-private counter for new comment + tracked-change IDs.

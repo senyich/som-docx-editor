@@ -1,14 +1,3 @@
-/**
- * Selection Tracker Plugin
- *
- * Tracks selection changes and emits events for toolbar state updates.
- * Provides the current selection context including:
- * - Text formatting at cursor/selection
- * - Paragraph formatting
- * - Selection range information
- * @packageDocumentation
- * @public
- */
 import { Plugin, EditorState, PluginKey } from 'prosemirror-state';
 import { T as TextFormatting, P as ParagraphFormatting } from '../../formatting-BH4hcZiq.mjs';
 import '../../colors-C3vA7HUU.mjs';

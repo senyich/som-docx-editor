@@ -1,31 +1,18 @@
-/**
- * @eigenpal/docx-editor-react/ui
- *
- * UI entry point — Toolbar, pickers, dialogs, and UI components.
- *
- * @example
- * ```tsx
- * import { Toolbar, FontPicker, ColorPicker } from '@eigenpal/docx-editor-react/ui';
- * ```
- *
- * @packageDocumentation
- * @public
- */
 import React__default, { CSSProperties, ReactNode } from 'react';
 import * as react_jsx_runtime from 'react/jsx-runtime';
-import { Table, TableCell, ParagraphAlignment, ColorValue, Style, Theme, StyleType, SectionProperties, TabStop, Document } from '@eigenpal/docx-editor-core/types/document';
-import { FontOption } from '@eigenpal/docx-editor-core/utils/fontOptions';
-export { FontOption } from '@eigenpal/docx-editor-core/utils/fontOptions';
-import { ListState } from '@eigenpal/docx-editor-core/utils/listState';
-export { ListState, createDefaultListState } from '@eigenpal/docx-editor-core/utils/listState';
-import { T as TableSelection, a as TableContext, b as TableSplitConfig, c as TableAction } from './useFindReplace-Bc2ubEeV.mjs';
-export { F as FindReplaceOptions, d as FindReplaceState, e as TableToolbar, f as TableToolbarProps, U as UseFindReplaceReturn, u as useFindReplace } from './useFindReplace-Bc2ubEeV.mjs';
-import { SelectionContext, AIAction, AgentResponse } from '@eigenpal/docx-editor-core/types/agentApi';
-import { TranslationKey } from '@eigenpal/docx-editor-i18n';
+import { Table, TableCell, ParagraphAlignment, ColorValue, Style, Theme, StyleType, SectionProperties, TabStop, Document } from '@som/docx-editor-core/types/document';
+import { FontOption } from '@som/docx-editor-core/utils/fontOptions';
+export { FontOption } from '@som/docx-editor-core/utils/fontOptions';
+import { ListState } from '@som/docx-editor-core/utils/listState';
+export { ListState, createDefaultListState } from '@som/docx-editor-core/utils/listState';
+import { T as TableSelection, a as TableContext, b as TableSplitConfig, c as TableAction } from './useFindReplace-DsU-W1mJ.mjs';
+export { F as FindReplaceOptions, d as FindReplaceState, e as TableToolbar, f as TableToolbarProps, U as UseFindReplaceReturn, u as useFindReplace } from './useFindReplace-DsU-W1mJ.mjs';
+import { SelectionContext, AIAction, AgentResponse } from '@som/docx-editor-core/types/agentApi';
+import { TranslationKey } from '@som/docx-editor-i18n';
 export { a as PrintButton, b as PrintButtonProps, P as PrintOptions, c as PrintStyles, f as formatPrintPageRange, g as getDefaultPrintOptions, i as isPrintSupported, o as openPrintWindow, p as parsePageRange, t as triggerPrint } from './PrintPreview-DEhwRBC_.mjs';
-export { K as DialogKeyboardShortcut, F as FindReplaceDialog, a as FindReplaceDialogProps, H as HyperlinkData, b as HyperlinkDialog, c as HyperlinkDialogProps, d as KeyboardShortcutsDialog, e as KeyboardShortcutsDialogProps, P as PasteOption, f as PasteSpecialDialog, g as PasteSpecialDialogProps, S as ShortcutCategory, U as UseKeyboardShortcutsDialogOptions, h as UseKeyboardShortcutsDialogReturn, i as UsePasteSpecialOptions, j as UsePasteSpecialReturn, k as formatShortcutKeys, l as getAllCategories, m as getAllPasteOptions, n as getCategoryLabel, o as getCommonShortcuts, p as getDefaultPasteOption, q as getDefaultShortcuts, r as getPasteOption, s as getShortcutsByCategory, t as isPasteSpecialShortcut, u as useHyperlinkDialog, v as useKeyboardShortcutsDialog, w as usePasteSpecial } from './KeyboardShortcutsDialog-B-h3NAat.mjs';
-export { FindMatch, FindOptions, FindResult, HighlightOptions, createDefaultFindOptions, createSearchPattern, escapeRegexString, findAllMatches, findInDocument, findInParagraph, getDefaultHighlightOptions, getMatchCountText, isEmptySearch, replaceAllInContent, replaceFirstInContent, scrollToMatch } from '@eigenpal/docx-editor-core/utils/findReplace';
-import '@eigenpal/docx-editor-core/utils';
+export { K as DialogKeyboardShortcut, F as FindReplaceDialog, a as FindReplaceDialogProps, H as HyperlinkData, b as HyperlinkDialog, c as HyperlinkDialogProps, d as KeyboardShortcutsDialog, e as KeyboardShortcutsDialogProps, P as PasteOption, f as PasteSpecialDialog, g as PasteSpecialDialogProps, S as ShortcutCategory, U as UseKeyboardShortcutsDialogOptions, h as UseKeyboardShortcutsDialogReturn, i as UsePasteSpecialOptions, j as UsePasteSpecialReturn, k as formatShortcutKeys, l as getAllCategories, m as getAllPasteOptions, n as getCategoryLabel, o as getCommonShortcuts, p as getDefaultPasteOption, q as getDefaultShortcuts, r as getPasteOption, s as getShortcutsByCategory, t as isPasteSpecialShortcut, u as useHyperlinkDialog, v as useKeyboardShortcutsDialog, w as usePasteSpecial } from './KeyboardShortcutsDialog-Dv6nAO6K.mjs';
+export { FindMatch, FindOptions, FindResult, HighlightOptions, createDefaultFindOptions, createSearchPattern, escapeRegexString, findAllMatches, findInDocument, findInParagraph, getDefaultHighlightOptions, getMatchCountText, isEmptySearch, replaceAllInContent, replaceFirstInContent, scrollToMatch } from '@som/docx-editor-core/utils/findReplace';
+import '@som/docx-editor-core/utils';
 
 interface FontPickerProps {
     value?: string;
@@ -76,7 +63,7 @@ declare function ListButtons({ listState, onBulletList, onNumberedList, onIndent
  * row/column add+delete, cell merge/split, selection bounds + lookups,
  * grid-anchor calculations for irregular merged tables. Used by
  * TableToolbar.tsx and the React table-selection hook; published from
- * `@eigenpal/docx-editor-react`.
+ * `@som/docx-editor-react`.
  */
 
 /**

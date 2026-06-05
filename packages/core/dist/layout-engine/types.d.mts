@@ -1,11 +1,3 @@
-/**
- * Layout Engine Types
- *
- * Core types for the paginated layout engine.
- * Converts document blocks + measurements into positioned fragments on pages.
- * @packageDocumentation
- * @public
- */
 import { R as RevisionInfo, C as CellMarker } from '../content-3xF4WDE8.mjs';
 import '../formatting-BH4hcZiq.mjs';
 import '../colors-C3vA7HUU.mjs';

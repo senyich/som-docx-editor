@@ -1,23 +1,3 @@
-/**
- * @eigenpal/docx-editor-i18n/zh-CN
- *
- * Simplified Chinese (`zh-CN`) — direct locale subpath for per-locale code-splitting.
- *
- * ```ts
- * // Static — bundler ships only this locale's strings
- * import zhCN from '@eigenpal/docx-editor-i18n/zh-CN';
- *
- * // Dynamic — splits into its own chunk, loaded on demand
- * const zhCN = (await import('@eigenpal/docx-editor-i18n/zh-CN')).default;
- * ```
- *
- * For multi-locale apps, prefer the per-locale subpaths over importing
- * `locales` from the package root — `locales` pulls every locale into
- * the bundle.
- *
- * @packageDocumentation
- * @public
- */
 import { PartialLocaleStrings } from './index.js';
 
 /**

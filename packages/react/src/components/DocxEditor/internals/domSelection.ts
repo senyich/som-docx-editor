@@ -13,7 +13,7 @@ import {
   findBodyPmSpans,
   type CaretPosition,
   type SelectionRect,
-} from '@eigenpal/docx-editor-core/layout-bridge';
+} from '@som/docx-editor-core/layout-bridge';
 
 /**
  * Resolve a caret position by measuring the rendered DOM rather than

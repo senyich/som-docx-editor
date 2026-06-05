@@ -1,8 +1,3 @@
-/**
- * Extension System — Barrel Export
- * @packageDocumentation
- * @public
- */
 import { b as ExtensionDefinition, E as Extension, M as MarkExtensionDefinition, c as MarkExtension, d as NodeExtensionDefinition, N as NodeExtension, A as AnyExtension } from '../../types-RchZmPFN.mjs';
 export { C as CommandMap, e as ExtensionConfig, f as ExtensionContext, a as ExtensionManager, g as ExtensionPriority, h as ExtensionRuntime, K as KeyboardShortcutMap, i as MarkExtensionConfig, j as NodeExtensionConfig, P as Priority } from '../../types-RchZmPFN.mjs';
 import { SelectionChangeCallback } from '../plugins/selectionTracker.mjs';

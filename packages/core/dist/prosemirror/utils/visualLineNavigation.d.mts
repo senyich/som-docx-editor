@@ -1,23 +1,3 @@
-/**
- * Visual line navigation helpers — implements Word/Google-Docs-style
- * ArrowUp / ArrowDown with sticky X across visual lines (not just
- * paragraphs). Lifted from packages/react/src/paged-editor/
- * useVisualLineNavigation.ts so both adapters share the algorithm.
- *
- * Frontend-agnostic: takes a `getContainer: () => HTMLElement | null`
- * callback and a mutable sticky-state object, returns the same
- * function quartet React's hook returns.
- *
- * @remarks
- * Tagged `@internal` post-1.0 cut. Both adapters re-export this through
- * their own composables (`useVisualLineNavigation`); consumers should
- * prefer those. The subpath stays in `package.json` `exports` for
- * back-compat; expect it to move behind a public surface in a future
- * major.
- *
- * @packageDocumentation
- * @internal
- */
 import { EditorView } from 'prosemirror-view';
 
 /** @internal */

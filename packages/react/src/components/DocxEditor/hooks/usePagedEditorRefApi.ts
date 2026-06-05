@@ -16,8 +16,8 @@ import { useEffect, useImperativeHandle } from 'react';
 import type { EditorState, Transaction } from 'prosemirror-state';
 import type { EditorView } from 'prosemirror-view';
 
-import type { Layout } from '@eigenpal/docx-editor-core/layout-engine';
-import type { Document, HeaderFooter } from '@eigenpal/docx-editor-core/types/document';
+import type { Layout } from '@som/docx-editor-core/layout-engine';
+import type { Document, HeaderFooter } from '@som/docx-editor-core/types/document';
 
 import type { HiddenProseMirrorRef } from '../HiddenProseMirror';
 import type { HiddenHeaderFooterPMsRef } from '../HiddenHeaderFooterPMs';

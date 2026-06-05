@@ -4,13 +4,13 @@
  * needs when a document changes columns mid-flow.
  */
 
-import { collectSectionConfigs } from '@eigenpal/docx-editor-core/layout-engine';
+import { collectSectionConfigs } from '@som/docx-editor-core/layout-engine';
 import type {
   ColumnLayout,
   FlowBlock,
   SectionLayoutConfig,
-} from '@eigenpal/docx-editor-core/layout-engine';
-import type { SectionProperties } from '@eigenpal/docx-editor-core/types/document';
+} from '@som/docx-editor-core/layout-engine';
+import type { SectionProperties } from '@som/docx-editor-core/types/document';
 
 /**
  * Convert twips to pixels (1 twip = 1/20 point, 96 pixels per inch).

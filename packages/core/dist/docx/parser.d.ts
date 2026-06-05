@@ -1,24 +1,3 @@
-/**
- * Main Parser Orchestrator - Unified parseDocx function
- *
- * Coordinates all sub-parsers to produce a complete Document model.
- * Handles loading order, dependency resolution, and font preloading.
- *
- * Parsing order:
- * 1. Unzip DOCX package
- * 2. Parse relationships
- * 3. Parse theme (needed for style color/font resolution)
- * 4. Parse styles (depends on theme)
- * 5. Parse numbering
- * 6. Parse document body (depends on styles, theme, numbering, rels)
- * 7. Parse headers/footers (depends on styles, theme, numbering, rels)
- * 8. Parse footnotes/endnotes (depends on styles, theme, numbering, rels)
- * 9. Extract and load fonts
- * 10. Build media file map
- * 11. Assemble final Document
- * @packageDocumentation
- * @public
- */
 import { Document } from '../types/document.js';
 import { D as DocxInput } from '../docxInput-DTbCa48g.js';
 import '../colors-C3vA7HUU.js';

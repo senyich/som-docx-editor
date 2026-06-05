@@ -11,15 +11,15 @@ import {
   deleteColumn as pmDeleteColumn,
   mergeCells as pmMergeCells,
   type TableContextInfo,
-} from '@eigenpal/docx-editor-core/prosemirror';
+} from '@som/docx-editor-core/prosemirror';
 import {
   setImageWrapType,
   type ImageLayoutTarget,
-} from '@eigenpal/docx-editor-core/prosemirror/commands';
-import type { WrapType } from '@eigenpal/docx-editor-core/docx/wrapTypes';
-import { en as defaultLocale } from '@eigenpal/docx-editor-i18n';
+} from '@som/docx-editor-core/prosemirror/commands';
+import type { WrapType } from '@som/docx-editor-core/docx/wrapTypes';
+import { en as defaultLocale } from '@som/docx-editor-i18n';
 import { useTranslation } from '../../../i18n';
-import type { Translations } from '@eigenpal/docx-editor-i18n';
+import type { Translations } from '@som/docx-editor-i18n';
 import { useImageContextMenu } from '../../ImageContextMenu';
 import { type TextContextAction, type TextContextMenuItem } from '../../TextContextMenu';
 import { findSelectionYPosition } from '../internals/pmAnchors';

@@ -14,7 +14,7 @@
 
 import { useCallback } from 'react';
 
-import { pixelsToEmu } from '@eigenpal/docx-editor-core/utils';
+import { pixelsToEmu } from '@som/docx-editor-core/utils';
 
 import type { HiddenProseMirrorRef } from '../HiddenProseMirror';
 

@@ -1,11 +1,3 @@
-/**
- * Template ProseMirror Plugin
- *
- * Simple plugin that finds template tags using regex and creates decorations.
- * No separate parsing layer - everything happens here.
- * @packageDocumentation
- * @public
- */
 import * as prosemirror_state from 'prosemirror-state';
 import { Plugin, PluginKey } from 'prosemirror-state';
 import { DecorationSet, EditorView } from 'prosemirror-view';

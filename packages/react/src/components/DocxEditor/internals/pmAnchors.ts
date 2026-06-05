@@ -9,8 +9,8 @@
  */
 
 import type { Node as PMNode } from 'prosemirror-model';
-import { findBodyPmAnchors } from '@eigenpal/docx-editor-core/layout-bridge';
-import type { Document, SectionProperties } from '@eigenpal/docx-editor-core/types/document';
+import { findBodyPmAnchors } from '@som/docx-editor-core/layout-bridge';
+import type { Document, SectionProperties } from '@som/docx-editor-core/types/document';
 
 /**
  * Y position (relative to parentEl) of the painted element containing `pmPos`.

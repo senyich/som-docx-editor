@@ -23,8 +23,8 @@ import {
   type Measure,
   type PageMargins,
   type SectionBreakBlock,
-} from '@eigenpal/docx-editor-core/layout-engine';
-import { toFlowBlocks } from '@eigenpal/docx-editor-core/layout-bridge';
+} from '@som/docx-editor-core/layout-engine';
+import { toFlowBlocks } from '@som/docx-editor-core/layout-bridge';
 import {
   buildFootnoteContentMap,
   buildFootnoteRenderItems,
@@ -34,7 +34,7 @@ import {
   getMargins,
   getPageSize,
   stabilizeFootnoteLayout,
-} from '@eigenpal/docx-editor-core/layout-bridge';
+} from '@som/docx-editor-core/layout-bridge';
 import type { Node as PMNode } from 'prosemirror-model';
 import {
   LayoutPainter,
@@ -44,8 +44,8 @@ import {
   type FootnoteRenderItem,
   type HeaderFooterContent,
   type RenderPageOptions,
-} from '@eigenpal/docx-editor-core/layout-painter';
-import { findVerticalScrollParentOrRoot } from '@eigenpal/docx-editor-core/utils/findVerticalScrollParent';
+} from '@som/docx-editor-core/layout-painter';
+import { findVerticalScrollParentOrRoot } from '@som/docx-editor-core/utils/findVerticalScrollParent';
 import type {
   Document,
   HeaderFooter,
@@ -53,7 +53,7 @@ import type {
   StyleDefinitions,
   Theme,
   Watermark,
-} from '@eigenpal/docx-editor-core/types/document';
+} from '@som/docx-editor-core/types/document';
 
 import type { HiddenProseMirrorRef } from '../HiddenProseMirror';
 import type { LayoutSelectionGate } from '../internals/LayoutSelectionGate';

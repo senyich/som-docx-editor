@@ -1,22 +1,3 @@
-/**
- * @eigenpal/docx-editor-core (default entry point)
- *
- * Fat barrel that re-exports the parser, serializer, agent, plugin
- * registry, and the most-used types. No React/DOM imports.
- *
- * **When to import from `.` vs `./headless`:** identical for Node.js
- * use; `.` is the convenient aggregate, `./headless` is its mirror with
- * a slightly different name suffix. Adapter authors who only need a
- * specific slice should prefer the smaller subpaths (`./docx`, `./agent`,
- * `./prosemirror`, `./layout-*`, `./utils`) — they tree-shake better.
- *
- * @example
- * ```ts
- * import { parseDocx, serializeDocx, resolveColor } from '@eigenpal/docx-editor-core';
- * ```
- * @packageDocumentation
- * @public
- */
 export { parseDocx } from './docx/parser.mjs';
 export { s as serializeDocumentBody, a as serializeDocx, b as serializeSectionProperties } from './sectionPropertiesSerializer-D86QlzlT.mjs';
 export { createDocx, default as repackDocx, updateMultipleFiles } from './docx/rezip.mjs';

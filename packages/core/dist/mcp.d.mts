@@ -1,24 +1,3 @@
-/**
- * MCP Server Module
- *
- * Model Context Protocol server for exposing document editing tools to AI clients.
- *
- * @example
- * ```ts
- * import { createMcpServer, startStdioServer } from '@eigenpal/docx-editor/mcp';
- *
- * // Create server instance
- * const server = createMcpServer({ debug: true });
- *
- * // List available tools
- * console.log(server.listTools());
- *
- * // Call a tool programmatically
- * const result = await server.handleToolCall('docx_load', { content: base64 });
- * ```
- * @packageDocumentation
- * @public
- */
 import { M as McpToolDefinition, e as McpSession, J as JsonSchema } from './types-DTF0N7UE.mjs';
 import './types/document.mjs';
 import './colors-C3vA7HUU.mjs';

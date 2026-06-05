@@ -1,9 +1,9 @@
 import { useImperativeHandle } from 'react';
 import { TextSelection } from 'prosemirror-state';
-import type { Document } from '@eigenpal/docx-editor-core/types/document';
-import type { Comment } from '@eigenpal/docx-editor-core/types/content';
-import { DocumentAgent } from '@eigenpal/docx-editor-core/agent';
-import { applyStyle } from '@eigenpal/docx-editor-core/prosemirror/commands';
+import type { Document } from '@som/docx-editor-core/types/document';
+import type { Comment } from '@som/docx-editor-core/types/content';
+import { DocumentAgent } from '@som/docx-editor-core/agent';
+import { applyStyle } from '@som/docx-editor-core/prosemirror/commands';
 import {
   createStyleResolver,
   findContentControlsInPM,
@@ -13,13 +13,13 @@ import {
   setContentControlValueTr,
   type SelectionState,
   type PMContentControl,
-} from '@eigenpal/docx-editor-core/prosemirror';
+} from '@som/docx-editor-core/prosemirror';
 import {
   ContentControlNotFoundError,
   type ContentControlFilter,
   type ContentControlValue,
-} from '@eigenpal/docx-editor-core/agent';
-import type { DocxInput } from '@eigenpal/docx-editor-core/utils';
+} from '@som/docx-editor-core/agent';
+import type { DocxInput } from '@som/docx-editor-core/utils';
 import type { DocxEditorRef } from '../../DocxEditor';
 import type { PagedEditorRef } from '../PagedEditor';
 import { findParaIdRange } from '../internals/pmAnchors';

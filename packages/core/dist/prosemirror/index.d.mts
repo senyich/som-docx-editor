@@ -1,16 +1,3 @@
-/**
- * ProseMirror Integration for DOCX Editor
- *
- * This module provides ProseMirror-based editing:
- * - Schema for DOCX document structure
- * - Bidirectional conversion between Document and PM
- * - React wrapper component
- * - Plugins for selection tracking
- * - Commands for formatting
- * - Extension system for schema, plugins, and keymaps
- * @packageDocumentation
- * @public
- */
 export { schema } from './schema/index.mjs';
 export { ToProseDocOptions, createEmptyDoc, footnoteToProseDoc, headerFooterToProseDoc, toProseDoc } from './conversion/index.mjs';
 export { fromProseDoc, updateDocumentContent } from './conversion/fromProseDoc.mjs';

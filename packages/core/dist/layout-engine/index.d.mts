@@ -1,14 +1,3 @@
-/**
- * Layout Engine - Main Entry Point
- *
- * Converts blocks + measures into positioned fragments on pages.
- *
- * @experimental Stable enough for the first-party React adapter, but the
- * API may change in minor releases until a third-party adapter validates
- * it. Pin a version range if you depend on this directly.
- * @packageDocumentation
- * @public
- */
 import { Page, PageMargins, ColumnLayout, Fragment, FlowBlock, Measure, SectionBreakBlock, Layout, TextBoxBlock, TableMeasure, LayoutOptions } from './types.mjs';
 export { BlockId, BorderStyle, CellBorderSpec, CellBorders, ColumnBreakBlock, ColumnBreakMeasure, DEFAULT_TEXTBOX_MARGINS, DEFAULT_TEXTBOX_WIDTH, DocumentPosition, FieldRun, FloatingTablePosition, FootnoteContent, FragmentBase, HeaderFooterContentHeights, HeaderFooterLayout, HitTestResult, HyperlinkInfo, ImageBlock, ImageFragment, ImageMeasure, ImageRun, ImageRunPosition, LineBreakRun, ListNumPr, MeasuredLine, MeasuredLineSegment, PageBreakBlock, PageBreakMeasure, ParagraphAttrs, ParagraphBlock, ParagraphBorders, ParagraphFragment, ParagraphIndent, ParagraphMeasure, ParagraphSpacing, Run, RunFormatting, SdtGroup, SectionBreakMeasure, TabAlignment, TabRun, TabStop, TableBlock, TableCell, TableCellMeasure, TableFragment, TableRow, TableRowMeasure, TextBoxFragment, TextBoxMeasure, TextRun, WrapTextDirection, assertExhaustiveFlowBlock } from './types.mjs';
 export { isFloatingWrapType, isWrapNone, wrapsAroundText } from '../docx/wrapTypes.mjs';

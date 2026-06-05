@@ -1,16 +1,3 @@
-/**
- * AutoSaveManager
- *
- * Framework-agnostic class for auto-saving documents to localStorage.
- * Extracted from the React `useAutoSave` hook.
- *
- * Usage with React:
- * ```ts
- * const snapshot = useSyncExternalStore(manager.subscribe, manager.getSnapshot);
- * ```
- * @packageDocumentation
- * @public
- */
 import { S as Subscribable } from '../Subscribable-DOz6Ohoo.js';
 import { AutoSaveSnapshot, AutoSaveManagerOptions, SavedDocumentData, AutoSaveStatus } from './types.js';
 import { Document } from '../types/document.js';

@@ -1,11 +1,3 @@
-/**
- * ProseMirror Plugins
- *
- * Selection tracker plugin for the DOCX editor.
- * Keymap plugins are now provided by the extension system.
- * @packageDocumentation
- * @public
- */
 export { SelectionChangeCallback, SelectionContext, createSelectionTrackerPlugin, extractSelectionContext, getSelectionContext, selectionTrackerKey } from './selectionTracker.mjs';
 import { PluginKey, EditorState, Transaction, Plugin } from 'prosemirror-state';
 export { c as createDocumentStylesPlugin, d as documentStylesKey, g as getDocumentStyleResolver } from '../../documentStyles-qR0VR2s0.mjs';

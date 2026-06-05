@@ -7,7 +7,7 @@
  */
 
 import { useCallback, useRef } from 'react';
-import { findVerticalScrollParent } from '@eigenpal/docx-editor-core/utils/findVerticalScrollParent';
+import { findVerticalScrollParent } from '@som/docx-editor-core/utils/findVerticalScrollParent';
 
 /** Pixel distance from container edge where auto-scroll activates. */
 const EDGE_ZONE = 40;

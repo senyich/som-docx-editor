@@ -1,12 +1,3 @@
-/**
- * Paragraph Formatting Commands — thin re-exports from extension system
- *
- * Alignment, line spacing, indentation, lists, paragraph styles.
- * All implementations live in extensions/; this file re-exports
- * for backward compatibility.
- * @packageDocumentation
- * @public
- */
 import { EditorState, Command } from 'prosemirror-state';
 import { P as ParagraphFormatting, T as TextFormatting, d as ParagraphAlignment, e as TabStop, i as TabStopAlignment, h as TabLeader, L as LineSpacingRule } from '../../formatting-_OXU8gLB.js';
 import '../../colors-C3vA7HUU.js';

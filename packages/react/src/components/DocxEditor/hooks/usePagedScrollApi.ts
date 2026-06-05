@@ -17,11 +17,11 @@ import {
   findBodyPmAnchor,
   findBodyPmSpans,
   getCaretPosition,
-} from '@eigenpal/docx-editor-core/layout-bridge';
-import { findPageIndexContainingPmPos } from '@eigenpal/docx-editor-core/layout-engine';
-import type { FlowBlock, Layout, Measure } from '@eigenpal/docx-editor-core/layout-engine';
-import { findStartPosForParaId } from '@eigenpal/docx-editor-core/prosemirror';
-import { findVerticalScrollParentOrRoot } from '@eigenpal/docx-editor-core/utils/findVerticalScrollParent';
+} from '@som/docx-editor-core/layout-bridge';
+import { findPageIndexContainingPmPos } from '@som/docx-editor-core/layout-engine';
+import type { FlowBlock, Layout, Measure } from '@som/docx-editor-core/layout-engine';
+import { findStartPosForParaId } from '@som/docx-editor-core/prosemirror';
+import { findVerticalScrollParentOrRoot } from '@som/docx-editor-core/utils/findVerticalScrollParent';
 
 import type { HiddenProseMirrorRef } from '../HiddenProseMirror';
 import { runAfterPaint, scrollElementCenterIntoContainer } from '../internals/scrollUtils';

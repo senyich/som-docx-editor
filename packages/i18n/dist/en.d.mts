@@ -1,23 +1,3 @@
-/**
- * @eigenpal/docx-editor-i18n/en
- *
- * English (`en`) — direct locale subpath for per-locale code-splitting.
- *
- * ```ts
- * // Static — bundler ships only this locale's strings
- * import en from '@eigenpal/docx-editor-i18n/en';
- *
- * // Dynamic — splits into its own chunk, loaded on demand
- * const en = (await import('@eigenpal/docx-editor-i18n/en')).default;
- * ```
- *
- * For multi-locale apps, prefer the per-locale subpaths over importing
- * `locales` from the package root — `locales` pulls every locale into
- * the bundle.
- *
- * @packageDocumentation
- * @public
- */
 import { LocaleStrings } from './index.mjs';
 
 /**

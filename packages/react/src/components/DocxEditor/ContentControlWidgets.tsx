@@ -20,7 +20,7 @@ import {
   addRepeatingSectionItemTr,
   removeRepeatingSectionItemTr,
   type PMContentControl,
-} from '@eigenpal/docx-editor-core/prosemirror';
+} from '@som/docx-editor-core/prosemirror';
 
 /** Parse the PM position out of a `sdt@<pos>` group id. */
 function posFromGroupId(id: string | undefined): number | null {

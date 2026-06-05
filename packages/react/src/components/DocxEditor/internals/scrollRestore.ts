@@ -18,8 +18,8 @@
  *     scroll position (top / scrollHeight ratio). Coarse but always works.
  */
 
-import { findBodyPmAnchor } from '@eigenpal/docx-editor-core/layout-bridge';
-import type { RenderPagesUpdateKind } from '@eigenpal/docx-editor-core/layout-painter';
+import { findBodyPmAnchor } from '@som/docx-editor-core/layout-bridge';
+import type { RenderPagesUpdateKind } from '@som/docx-editor-core/layout-painter';
 
 import { findPaintedPmStartAtOrBefore } from './scrollUtils';
 

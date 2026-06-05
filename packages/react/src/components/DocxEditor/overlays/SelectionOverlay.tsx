@@ -10,7 +10,7 @@
  */
 
 import React, { useEffect, useState, useRef } from 'react';
-import type { SelectionRect, CaretPosition } from '@eigenpal/docx-editor-core/layout-bridge';
+import type { SelectionRect, CaretPosition } from '@som/docx-editor-core/layout-bridge';
 
 // =============================================================================
 // TYPES
@@ -238,9 +238,9 @@ export const SelectionOverlay: React.FC<SelectionOverlayProps> = ({
  */
 export function useSelectionOverlay(
   pmSelection: { from: number; to: number } | null,
-  layout: import('@eigenpal/docx-editor-core/layout-engine').Layout | null,
-  blocks: import('@eigenpal/docx-editor-core/layout-engine').FlowBlock[],
-  measures: import('@eigenpal/docx-editor-core/layout-engine').Measure[]
+  layout: import('@som/docx-editor-core/layout-engine').Layout | null,
+  blocks: import('@som/docx-editor-core/layout-engine').FlowBlock[],
+  measures: import('@som/docx-editor-core/layout-engine').Measure[]
 ): {
   selectionRects: SelectionRect[];
   caretPosition: CaretPosition | null;
@@ -256,7 +256,7 @@ export function useSelectionOverlay(
     }
 
     // Import dynamically to avoid circular dependencies
-    import('@eigenpal/docx-editor-core/layout-bridge').then(
+    import('@som/docx-editor-core/layout-bridge').then(
       ({ selectionToRects, getCaretPosition }) => {
         const { from, to } = pmSelection;
 

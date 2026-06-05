@@ -1,12 +1,3 @@
-/**
- * RenderedDomContext Implementation
- *
- * Provides DOM-based position mapping for the LayoutPainter output.
- * Uses the same data-pm-start/data-pm-end attribute pattern as the
- * selection overlay in PagedEditor.
- * @packageDocumentation
- * @public
- */
 import { RenderedDomContext, PositionCoordinates } from './types.mjs';
 import 'prosemirror-state';
 import 'prosemirror-view';

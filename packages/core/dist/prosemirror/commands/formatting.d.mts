@@ -1,12 +1,3 @@
-/**
- * Text Formatting Commands — thin re-exports from extension system
- *
- * Toggle marks, set marks, clear formatting, hyperlinks.
- * All implementations live in extensions/marks/; this file re-exports
- * for backward compatibility.
- * @packageDocumentation
- * @public
- */
 import { Command, EditorState } from 'prosemirror-state';
 import { MarkType, Mark } from 'prosemirror-model';
 import { T as TextFormatting } from '../../formatting-BH4hcZiq.mjs';

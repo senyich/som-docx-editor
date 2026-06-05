@@ -1,11 +1,3 @@
-/**
- * Text Measurement Module
- *
- * Provides text measurement utilities for the layout engine.
- * Uses Canvas API for accurate, cached measurements.
- * @packageDocumentation
- * @public
- */
 import { WrapTextDirection, TextRun, ParagraphBlock, ParagraphMeasure, FlowBlock, Measure } from '../../layout-engine/types.mjs';
 import { P as PageGeometry } from '../../anchoredObjectPosition-KJEyF-wr.mjs';
 import '../../content-3xF4WDE8.mjs';

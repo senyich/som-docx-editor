@@ -1,18 +1,3 @@
-/**
- * Comprehensive TypeScript types for full DOCX document representation
- *
- * This barrel file re-exports all types from the split modules.
- * Existing imports from './types/document' continue to work unchanged.
- *
- * Module structure:
- * - colors.ts      — Color primitives, borders, shading
- * - formatting.ts  — Text, paragraph, and table formatting properties
- * - lists.ts       — Numbering and list definitions
- * - content.ts     — Content model (runs, images, shapes, tables, paragraphs, sections)
- * - styles.ts      — Styles, theme, fonts, relationships, media
- * @packageDocumentation
- * @public
- */
 export { B as BorderSpec, C as ColorValue, S as ShadingProperties, T as ThemeColorSlot } from '../colors-C3vA7HUU.js';
 export { C as CellMargins, g as ConditionalFormatStyle, E as EmphasisMark, F as FloatingTableProperties, L as LineSpacingRule, d as ParagraphAlignment, P as ParagraphFormatting, h as TabLeader, e as TabStop, i as TabStopAlignment, j as TableBorders, c as TableCellFormatting, a as TableFormatting, f as TableLook, k as TableMeasurement, b as TableRowFormatting, l as TableWidthType, m as TextEffect, T as TextFormatting, U as UnderlineStyle } from '../formatting-_OXU8gLB.js';
 import { D as DocumentBody, k as NumberingDefinitions, F as Footnote, E as Endnote, y as HeaderFooter } from '../content-C8fc_tL6.js';

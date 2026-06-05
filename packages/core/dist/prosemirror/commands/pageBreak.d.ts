@@ -1,8 +1,3 @@
-/**
- * Page Break Commands
- * @packageDocumentation
- * @public
- */
 import { Command } from 'prosemirror-state';
 
 /**

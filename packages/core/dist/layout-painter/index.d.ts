@@ -1,15 +1,3 @@
-/**
- * Layout Painter
- *
- * Main entry point for rendering Layout data to DOM.
- * Provides reconciliation for efficient incremental updates.
- *
- * @experimental Stable enough for the first-party React adapter, but the
- * API may change in minor releases until a third-party adapter validates
- * it. Pin a version range if you depend on this directly.
- * @packageDocumentation
- * @public
- */
 import '../layout-engine/types.js';
 export { B as BlockLookup, a as BlockLookupEntry, F as FRAGMENT_CLASS_NAMES, I as IMAGE_CLASS_NAMES, b as IMAGE_LAYOUT_OPTIONS, c as ImageHitTestResult, d as ImageLayoutIconHint, e as ImageLayoutOptionDef, L as LAYOUT_IMAGE_CLASSES, f as LayoutPainter, P as PainterOptions, RenderContext, RenderPageOptions, RenderPagesUpdateKind, T as TABLE_CLASS_NAMES, g as TEXTBOX_CLASS_NAMES, h as applySdtFocus, i as captureInlinePositionEmu, j as createPainter, k as deriveLayoutChoice, l as enclosingSdtGroupIds, m as findImageElement, n as hitTestImage, isFloatingImageRun, o as isImageLayoutOptionEnabled, isTextWrappingFloatingImageRun, renderAllPagesNow, r as renderFragment, p as renderImageFragment, q as renderLine, renderPage, renderPages, s as renderParagraphFragment, t as renderTableFragment, u as renderTextBoxFragment, v as sliceRunsForLine, w as toolbarValueToLayoutTarget } from './renderPage.js';
 export { P as PageGeometry, p as pageGeometryFromPage, r as resolveAnchoredObjectPosition, a as resolveAnchoredObjectVerticalTop } from '../anchoredObjectPosition-CS-8BfhO.js';

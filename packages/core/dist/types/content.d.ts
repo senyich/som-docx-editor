@@ -1,17 +1,3 @@
-/**
- * Document Content Model — barrel.
- *
- * All content-bearing types: runs, hyperlinks, bookmarks, fields,
- * images, shapes, tables, lists, paragraphs, headers/footers,
- * footnotes/endnotes, and sections.
- *
- * The types form a deeply interrelated tree (Paragraph ↔ Table ↔ ShapeTextBody)
- * and are split across `./content/*.ts` by domain. This file re-exports them
- * so existing imports from `@eigenpal/docx-editor-core/types/content` keep
- * working unchanged.
- * @packageDocumentation
- * @public
- */
 export { B as BlockContent, w as BlockSdt, z as BookmarkEnd, G as BookmarkStart, x as BreakContent, J as Column, e as Comment, f as CommentRangeEnd, g as CommentRangeStart, K as ComplexField, h as Deletion, D as DocumentBody, O as DrawingContent, E as Endnote, Q as EndnotePosition, U as EndnoteProperties, V as Field, W as FieldCharContent, X as FieldType, Y as FooterReference, F as Footnote, Z as FootnotePosition, _ as FootnoteProperties, y as HeaderFooter, $ as HeaderFooterType, a0 as HeaderReference, H as Hyperlink, I as Image, a1 as ImageCrop, a2 as ImagePadding, a3 as ImagePosition, a4 as ImageSize, a5 as ImageTransform, a6 as ImageWrap, a7 as InlineSdt, i as Insertion, a8 as InstrTextContent, aa as LineNumberRestart, ac as MathEquation, M as MoveFrom, ad as MoveFromRangeEnd, ae as MoveFromRangeStart, j as MoveTo, af as MoveToRangeEnd, ag as MoveToRangeStart, ah as NoBreakHyphenContent, ai as NoteNumberRestart, aj as NoteRefMarkContent, ak as NoteReferenceContent, am as PageOrientation, P as Paragraph, l as ParagraphContent, a as ParagraphPropertyChange, an as PropertyChangeInfo, m as Run, n as RunContent, ao as RunPropertyChange, v as SdtDataBinding, u as SdtProperties, t as SdtType, ap as Section, S as SectionProperties, aq as SectionStart, ar as SeparatorContent, as as Shape, at as ShapeContent, au as ShapeFill, av as ShapeOutline, aw as ShapeTextBody, ax as ShapeType, ay as SimpleField, az as SoftHyphenContent, aA as SymbolContent, aB as TabContent, T as Table, o as TableCell, c as TableCellPropertyChange, b as TablePropertyChange, p as TableRow, d as TableRowPropertyChange, aC as TableStructuralChangeInfo, aD as TextBox, q as TextContent, r as TrackedChangeInfo, s as TrackedRunChange, aE as VerticalAlign } from '../content-C8fc_tL6.js';
 export { P as PictureWatermark, T as TextWatermark, W as Watermark, p as pictureWatermarkDisplayEmu } from '../watermark-DAcnAs_J.js';
 import '../formatting-_OXU8gLB.js';

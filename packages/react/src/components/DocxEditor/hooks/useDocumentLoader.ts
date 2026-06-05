@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useRef } from 'react';
-import type { Document } from '@eigenpal/docx-editor-core/types/document';
-import type { Comment } from '@eigenpal/docx-editor-core/types/content';
-import { parseDocx } from '@eigenpal/docx-editor-core/docx';
-import { DocumentAgent } from '@eigenpal/docx-editor-core/agent';
-import { loadDocumentFonts, type DocxInput } from '@eigenpal/docx-editor-core/utils';
+import type { Document } from '@som/docx-editor-core/types/document';
+import type { Comment } from '@som/docx-editor-core/types/content';
+import { parseDocx } from '@som/docx-editor-core/docx';
+import { DocumentAgent } from '@som/docx-editor-core/agent';
+import { loadDocumentFonts, type DocxInput } from '@som/docx-editor-core/utils';
 import type { UseHistoryReturn } from '../../../hooks/useHistory';
 import type { PagedEditorRef } from '../PagedEditor';
 import { bumpNextCommentIdAbove } from '../commentFactories';

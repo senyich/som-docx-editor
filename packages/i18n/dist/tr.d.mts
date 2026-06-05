@@ -1,23 +1,3 @@
-/**
- * @eigenpal/docx-editor-i18n/tr
- *
- * Turkish (`tr`) — direct locale subpath for per-locale code-splitting.
- *
- * ```ts
- * // Static — bundler ships only this locale's strings
- * import tr from '@eigenpal/docx-editor-i18n/tr';
- *
- * // Dynamic — splits into its own chunk, loaded on demand
- * const tr = (await import('@eigenpal/docx-editor-i18n/tr')).default;
- * ```
- *
- * For multi-locale apps, prefer the per-locale subpaths over importing
- * `locales` from the package root — `locales` pulls every locale into
- * the bundle.
- *
- * @packageDocumentation
- * @public
- */
 import { PartialLocaleStrings } from './index.mjs';
 
 /**

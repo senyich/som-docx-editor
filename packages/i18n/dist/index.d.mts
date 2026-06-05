@@ -1,29 +1,3 @@
-/**
- * Shared locale data, types, and runtime helpers for the @eigenpal
- * docx-editor adapters.
- *
- * Import everything from the package root. `sideEffects: false` lets
- * consumer bundlers tree-shake unused locales.
- *
- * ```ts
- * import {
- *   en, de, pl, tr, he, ptBR, zhCN,    // typed locale data
- *   locales,                            // record keyed by BCP-47 tag
- *   deepMerge, createT,                 // build a t() for custom hosts
- *   type LocaleStrings,                 // shape of `en` (source of truth)
- *   type Translations,                  // shape of a community partial
- *   type TranslationKey,                // every valid `t()` key
- *   type LocaleCode,                    // 'en' | 'de' | 'pt-BR' | ...
- * } from '@eigenpal/docx-editor-i18n';
- * ```
- *
- * The React and Vue adapters wrap `createT` in framework-native bindings
- * (`useTranslation`, `LocaleProvider`, etc.); use those for app code.
- * Reach for `createT` directly when building a non-React/Vue host.
- *
- * @packageDocumentation
- * @public
- */
 var _lang = "en";
 var common = {
 	cancel: "Cancel",

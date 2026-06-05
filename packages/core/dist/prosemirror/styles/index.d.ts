@@ -1,8 +1,3 @@
-/**
- * Style utilities for ProseMirror editor
- * @packageDocumentation
- * @public
- */
 import { P as ParagraphFormatting, T as TextFormatting } from '../../formatting-_OXU8gLB.js';
 import { S as StyleDefinitions, a as Style, D as DocDefaults } from '../../styles-BWqX2AS-.js';
 import '../../colors-C3vA7HUU.js';

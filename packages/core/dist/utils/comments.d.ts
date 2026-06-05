@@ -1,13 +1,3 @@
-/**
- * Framework-agnostic comment + tracked-change helpers shared by the
- * React and Vue adapters. The data shapes and string-formatting rules
- * here are part of the visible UI (avatar colors, date strings) so
- * keep this file as the single source of truth — both adapters import
- * from here. CSS-property factories live in adapter-specific files
- * (sidebar/cardUtils.ts in React, sidebar/sidebarUtils.ts in Vue).
- * @packageDocumentation
- * @public
- */
 import { P as Paragraph } from '../content-C8fc_tL6.js';
 import '../formatting-_OXU8gLB.js';
 import '../colors-C3vA7HUU.js';

@@ -29,15 +29,15 @@ import {
 import { CellSelection } from 'prosemirror-tables';
 import { EditorView, type DirectEditorProps } from 'prosemirror-view';
 import { undo, redo } from 'prosemirror-history';
-import { schema, createDocumentStylesPlugin } from '@eigenpal/docx-editor-core/prosemirror';
-import { toProseDoc, createEmptyDoc } from '@eigenpal/docx-editor-core/prosemirror/conversion';
-import { fromProseDoc } from '@eigenpal/docx-editor-core/prosemirror/conversion';
-import type { ExtensionManager } from '@eigenpal/docx-editor-core/prosemirror/extensions';
-import type { Document, Theme, StyleDefinitions } from '@eigenpal/docx-editor-core/types/document';
+import { schema, createDocumentStylesPlugin } from '@som/docx-editor-core/prosemirror';
+import { toProseDoc, createEmptyDoc } from '@som/docx-editor-core/prosemirror/conversion';
+import { fromProseDoc } from '@som/docx-editor-core/prosemirror/conversion';
+import type { ExtensionManager } from '@som/docx-editor-core/prosemirror/extensions';
+import type { Document, Theme, StyleDefinitions } from '@som/docx-editor-core/types/document';
 
 // Import ProseMirror CSS
 import 'prosemirror-view/style/prosemirror.css';
-import '@eigenpal/docx-editor-core/prosemirror/editor.css';
+import '@som/docx-editor-core/prosemirror/editor.css';
 
 /**
  * `Transaction.updated` is an internal bitfield in `prosemirror-state` whose

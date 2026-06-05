@@ -1,17 +1,3 @@
-/**
- * Page Renderer
- *
- * Renders a single page from Layout data to DOM elements.
- * Each page contains positioned fragments within a content area.
- *
- * This file owns the single-page orchestrator (`renderPage`) plus page-level
- * styling (background, borders, content area) and floating-image extraction
- * from paragraphs. Header/footer rendering lives in ./renderPage/headerFooter.ts,
- * footnote area rendering in ./renderPage/footnotes.ts, and the multi-page
- * virtualization / IntersectionObserver layer in ./renderPage/virtualization.ts.
- * @packageDocumentation
- * @public
- */
 import { ImageRun, Page, ParagraphBlock, MeasuredLine, TabStop, Run, ParagraphFragment, ParagraphMeasure, ParagraphBorders, Fragment, TableFragment, TableBlock, TableMeasure, ImageFragment, ImageBlock, ImageMeasure, TextBoxFragment, TextBoxBlock, TextBoxMeasure, FlowBlock, Measure, Layout } from '../layout-engine/types.mjs';
 import '../anchoredObjectPosition-KJEyF-wr.mjs';
 import { Node } from 'prosemirror-model';

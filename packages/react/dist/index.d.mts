@@ -1,38 +1,22 @@
-/**
- * @eigenpal/docx-editor-react
- *
- * Curated root entry for the documented React editor API. Advanced surfaces
- * stay public through explicit subpaths:
- * - `@eigenpal/docx-editor-react/ui`
- * - `@eigenpal/docx-editor-react/dialogs`
- * - `@eigenpal/docx-editor-react/hooks`
- * - `@eigenpal/docx-editor-react/plugin-api`
- *
- * Framework-agnostic document utilities live in `@eigenpal/docx-editor-core`.
- * Agent/MCP surfaces live in `@eigenpal/docx-editor-agents`.
- *
- * @packageDocumentation
- * @public
- */
 import * as React from 'react';
 import { ReactNode, CSSProperties } from 'react';
 import * as prosemirror_view from 'prosemirror-view';
 import { EditorView } from 'prosemirror-view';
 import * as prosemirror_state from 'prosemirror-state';
 import { EditorState, Transaction } from 'prosemirror-state';
-import { Document, HeaderFooter, Theme } from '@eigenpal/docx-editor-core/types/document';
-import { FontOption } from '@eigenpal/docx-editor-core/utils/fontOptions';
-import { R as ReactSidebarItem } from './types-D35gNE-_.mjs';
-import { Comment } from '@eigenpal/docx-editor-core/types/content';
-import { Translations, TFunction } from '@eigenpal/docx-editor-i18n';
+import { Document, HeaderFooter, Theme } from '@som/docx-editor-core/types/document';
+import { FontOption } from '@som/docx-editor-core/utils/fontOptions';
+import { R as ReactSidebarItem } from './types-C8QZ-0eE.mjs';
+import { Comment } from '@som/docx-editor-core/types/content';
+import { Translations, TFunction } from '@som/docx-editor-i18n';
 import { P as PrintOptions } from './PrintPreview-DEhwRBC_.mjs';
-import { DocumentAgent, ContentControlFilter, ContentControlValue } from '@eigenpal/docx-editor-core/agent';
-import { DocxInput, FontDefinition } from '@eigenpal/docx-editor-core/utils';
-import { SelectionState, PMContentControl } from '@eigenpal/docx-editor-core/prosemirror';
-import { Layout } from '@eigenpal/docx-editor-core/layout-engine';
-import { RenderedDomContext } from '@eigenpal/docx-editor-core/plugin-api';
-import { EditorHandle } from '@eigenpal/docx-editor-core';
-export { CreateEmptyDocumentOptions, createDocumentWithText, createEmptyDocument } from '@eigenpal/docx-editor-core';
+import { DocumentAgent, ContentControlFilter, ContentControlValue } from '@som/docx-editor-core/agent';
+import { DocxInput, FontDefinition } from '@som/docx-editor-core/utils';
+import { SelectionState, PMContentControl } from '@som/docx-editor-core/prosemirror';
+import { Layout } from '@som/docx-editor-core/layout-engine';
+import { RenderedDomContext } from '@som/docx-editor-core/plugin-api';
+import { EditorHandle } from '@som/docx-editor-core';
+export { CreateEmptyDocumentOptions, createDocumentWithText, createEmptyDocument } from '@som/docx-editor-core';
 import * as react_jsx_runtime from 'react/jsx-runtime';
 
 /**
@@ -511,12 +495,12 @@ declare const DocxEditor: React.ForwardRefExoticComponent<DocxEditorProps & Reac
 /**
  * Simple imperative API for rendering a DOCX editor into a DOM element.
  *
- * Returns an `EditorHandle` (from @eigenpal/docx-editor-core) that works with
+ * Returns an `EditorHandle` (from @som/docx-editor-core) that works with
  * any framework implementation.
  *
  * Usage:
  * ```ts
- * import { renderAsync } from '@eigenpal/docx-editor-react';
+ * import { renderAsync } from '@som/docx-editor-react';
  *
  * const editor = await renderAsync(docxBlob, document.getElementById('container'), {
  *   readOnly: false,
@@ -568,17 +552,17 @@ declare function useTranslation(): {
 };
 
 /**
- * @eigenpal/docx-editor-react
+ * @som/docx-editor-react
  *
  * Curated root entry for the documented React editor API. Advanced surfaces
  * stay public through explicit subpaths:
- * - `@eigenpal/docx-editor-react/ui`
- * - `@eigenpal/docx-editor-react/dialogs`
- * - `@eigenpal/docx-editor-react/hooks`
- * - `@eigenpal/docx-editor-react/plugin-api`
+ * - `@som/docx-editor-react/ui`
+ * - `@som/docx-editor-react/dialogs`
+ * - `@som/docx-editor-react/hooks`
+ * - `@som/docx-editor-react/plugin-api`
  *
- * Framework-agnostic document utilities live in `@eigenpal/docx-editor-core`.
- * Agent/MCP surfaces live in `@eigenpal/docx-editor-agents`.
+ * Framework-agnostic document utilities live in `@som/docx-editor-core`.
+ * Agent/MCP surfaces live in `@som/docx-editor-agents`.
  *
  * @packageDocumentation
  * @public

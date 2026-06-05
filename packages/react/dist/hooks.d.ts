@@ -1,30 +1,16 @@
-/**
- * @eigenpal/docx-editor-react/hooks
- *
- * React hooks for editor history, table selection, find/replace, autosave,
- * clipboard, and zoom. Use alongside the main `DocxEditor` component.
- *
- * @example
- * ```tsx
- * import { useAutoSave, useFindReplace } from '@eigenpal/docx-editor-react/hooks';
- * ```
- *
- * @packageDocumentation
- * @public
- */
-import { Table, Document } from '@eigenpal/docx-editor-core/types/document';
-import { a as TableContext, c as TableAction, b as TableSplitConfig } from './useFindReplace-Bc2ubEeV.js';
-export { F as FindReplaceOptions, d as FindReplaceState, U as UseFindReplaceReturn, u as useFindReplace } from './useFindReplace-Bc2ubEeV.js';
+import { Table, Document } from '@som/docx-editor-core/types/document';
+import { a as TableContext, c as TableAction, b as TableSplitConfig } from './useFindReplace-DsU-W1mJ.js';
+export { F as FindReplaceOptions, d as FindReplaceState, U as UseFindReplaceReturn, u as useFindReplace } from './useFindReplace-DsU-W1mJ.js';
 import * as React$1 from 'react';
 import React__default, { CSSProperties, RefObject } from 'react';
-import { HighlightRect, SelectionHighlightConfig, ParsedClipboardContent } from '@eigenpal/docx-editor-core/utils';
-import { ClipboardSelection, Theme, SavedDocumentData, AutoSaveStatus } from '@eigenpal/docx-editor-core';
-export { AutoSaveStatus, ClipboardSelection, SavedDocumentData, TABLE_DATA_ATTRIBUTES, createSelectionFromDOM, formatLastSaveTime, formatStorageSize, getAutoSaveStatusLabel, getAutoSaveStorageSize, getSelectionRuns, isAutoSaveSupported } from '@eigenpal/docx-editor-core';
+import { HighlightRect, SelectionHighlightConfig, ParsedClipboardContent } from '@som/docx-editor-core/utils';
+import { ClipboardSelection, Theme, SavedDocumentData, AutoSaveStatus } from '@som/docx-editor-core';
+export { AutoSaveStatus, ClipboardSelection, SavedDocumentData, TABLE_DATA_ATTRIBUTES, createSelectionFromDOM, formatLastSaveTime, formatStorageSize, getAutoSaveStatusLabel, getAutoSaveStorageSize, getSelectionRuns, isAutoSaveSupported } from '@som/docx-editor-core';
 import { EditorView } from 'prosemirror-view';
 import { EditorState } from 'prosemirror-state';
-import { TrackedChangesResult } from '@eigenpal/docx-editor-core/prosemirror/utils/extractTrackedChanges';
-export { TrackedChangesResult, extractTrackedChanges } from '@eigenpal/docx-editor-core/prosemirror/utils/extractTrackedChanges';
-import '@eigenpal/docx-editor-core/utils/findReplace';
+import { TrackedChangesResult } from '@som/docx-editor-core/prosemirror/utils/extractTrackedChanges';
+export { TrackedChangesResult, extractTrackedChanges } from '@som/docx-editor-core/prosemirror/utils/extractTrackedChanges';
+import '@som/docx-editor-core/utils/findReplace';
 
 /**
  * History hook for undo/redo functionality

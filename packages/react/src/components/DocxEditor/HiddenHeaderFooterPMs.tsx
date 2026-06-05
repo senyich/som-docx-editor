@@ -34,19 +34,19 @@ import {
 import { EditorState } from 'prosemirror-state';
 import type { EditorState as EditorStateT } from 'prosemirror-state';
 import { EditorView } from 'prosemirror-view';
-import { schema, createDocumentStylesPlugin } from '@eigenpal/docx-editor-core/prosemirror';
+import { schema, createDocumentStylesPlugin } from '@som/docx-editor-core/prosemirror';
 import {
   headerFooterToProseDoc,
   proseDocToBlocks,
-} from '@eigenpal/docx-editor-core/prosemirror/conversion';
-import { createStarterKit } from '@eigenpal/docx-editor-core/prosemirror/extensions';
-import { ExtensionManager } from '@eigenpal/docx-editor-core/prosemirror/extensions';
+} from '@som/docx-editor-core/prosemirror/conversion';
+import { createStarterKit } from '@som/docx-editor-core/prosemirror/extensions';
+import { ExtensionManager } from '@som/docx-editor-core/prosemirror/extensions';
 import type {
   Document,
   HeaderFooter,
   StyleDefinitions,
   Theme,
-} from '@eigenpal/docx-editor-core/types/document';
+} from '@som/docx-editor-core/types/document';
 
 import 'prosemirror-view/style/prosemirror.css';
 

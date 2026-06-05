@@ -4,18 +4,18 @@ import type {
   ColorValue,
   Theme,
   ThemeColorScheme,
-} from '@eigenpal/docx-editor-core/types/document';
+} from '@som/docx-editor-core/types/document';
 import {
   generateThemeTintShadeMatrix,
   resolveColor,
   resolveColorToHex,
   resolveHighlightColor,
-} from '@eigenpal/docx-editor-core/utils';
-import type { ThemeMatrixCell } from '@eigenpal/docx-editor-core/utils';
+} from '@som/docx-editor-core/utils';
+import type { ThemeMatrixCell } from '@som/docx-editor-core/utils';
 import { useFixedDropdown } from '../../hooks/useFixedDropdown';
 import { MaterialSymbol } from './MaterialSymbol';
 import { useTranslation } from '../../i18n';
-import type { TranslationKey } from '@eigenpal/docx-editor-i18n';
+import type { TranslationKey } from '@som/docx-editor-i18n';
 
 // ============================================================================
 // TYPES

@@ -22,8 +22,8 @@ import { useTranslation } from '../../i18n';
 // TYPES
 // ============================================================================
 
-export type { FontOption } from '@eigenpal/docx-editor-core/utils/fontOptions';
-import type { FontOption } from '@eigenpal/docx-editor-core/utils/fontOptions';
+export type { FontOption } from '@som/docx-editor-core/utils/fontOptions';
+import type { FontOption } from '@som/docx-editor-core/utils/fontOptions';
 
 export interface FontPickerProps {
   value?: string;

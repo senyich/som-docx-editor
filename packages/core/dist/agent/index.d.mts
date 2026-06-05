@@ -1,12 +1,3 @@
-/**
- * Document Agent
- *
- * Headless, framework-agnostic API for inspecting and editing the
- * Document model. Used by `@eigenpal/docx-editor-agents` and any
- * adapter that wants agent capabilities without UI.
- * @packageDocumentation
- * @public
- */
 export { A as AgentContextOptions, S as ContextSelectionOptions, D as DocumentAgent, E as ExtendedSelectionContext, F as FormattedTextSegment, a as FormattingSummary, I as InsertHyperlinkOptions, b as InsertImageOptions, c as InsertTableOptions, d as InsertTextOptions, e as SelectionContextOptions, f as buildExtendedSelectionContext, g as buildSelectionContext, h as buildSelectionContextFromContext, i as createAgent, j as createAgentFromDocument, k as executeCommand, l as executeCommands, m as getAgentContext, n as getDocumentSummary, o as getSelectionFormattingSummary } from '../selectionContext-CoZat7QZ.mjs';
 import { T as TextFormatting } from '../formatting-BH4hcZiq.mjs';
 import { D as DocumentBody, P as Paragraph, H as Hyperlink, m as Run, T as Table, u as SdtProperties } from '../content-3xF4WDE8.mjs';

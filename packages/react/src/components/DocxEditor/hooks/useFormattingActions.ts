@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 import { TextSelection } from 'prosemirror-state';
-import type { Document } from '@eigenpal/docx-editor-core/types/document';
+import type { Document } from '@som/docx-editor-core/types/document';
 import {
   toggleBold,
   toggleItalic,
@@ -30,8 +30,8 @@ import {
   insertPageBreak,
   generateTOC,
   insertTable,
-} from '@eigenpal/docx-editor-core/prosemirror/commands';
-import { createStyleResolver } from '@eigenpal/docx-editor-core/prosemirror';
+} from '@som/docx-editor-core/prosemirror/commands';
+import { createStyleResolver } from '@som/docx-editor-core/prosemirror';
 import type { EditorView } from 'prosemirror-view';
 import type { FormattingAction } from '../../Toolbar';
 import { pointsToHalfPoints } from '../../ui/FontSizePicker';

@@ -1,13 +1,3 @@
-/**
- * Agent API Types
- *
- * TypeScript interfaces for the agent API:
- * - Position and Range types
- * - Command types for document manipulation
- * - Context types for AI agents
- * @packageDocumentation
- * @public
- */
 import { T as TextFormatting, P as ParagraphFormatting } from '../formatting-BH4hcZiq.mjs';
 import '../colors-C3vA7HUU.mjs';
 

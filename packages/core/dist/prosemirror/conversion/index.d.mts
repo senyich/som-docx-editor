@@ -1,10 +1,3 @@
-/**
- * Document Conversion Utilities
- *
- * Bidirectional conversion between Document (DOCX) and ProseMirror document.
- * @packageDocumentation
- * @public
- */
 import { Node } from 'prosemirror-model';
 import { Document } from '../../types/document.mjs';
 import { S as StyleDefinitions, T as Theme } from '../../styles-BOJ93SAm.mjs';

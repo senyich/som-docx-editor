@@ -1,11 +1,3 @@
-/**
- * DOCX XML Serializers
- *
- * Lower-level Document → OOXML transforms. For the round-trip "model in,
- * `.docx` archive out" path, use `./docx` instead.
- * @packageDocumentation
- * @public
- */
 export { c as serializeBlockContent, a as serializeDocument, s as serializeDocumentBody, b as serializeSectionProperties } from '../../sectionPropertiesSerializer-D86QlzlT.mjs';
 import { P as Paragraph, m as Run, T as Table, y as HeaderFooter, e as Comment, E as Endnote, F as Footnote } from '../../content-3xF4WDE8.mjs';
 import '../../types/document.mjs';

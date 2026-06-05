@@ -1,17 +1,3 @@
-/**
- * DOCX I/O
- *
- * Parsing DOCX archives into the `Document` model and re-zipping a
- * model back into a DOCX file. Use `./docx/serializer` for the lower-level
- * Document → XML transforms.
- *
- * The named exports below are the public API contract. Adding a parser
- * helper to a source module does not automatically make it public — it
- * must be added to this barrel to be reachable from
- * `@eigenpal/docx-editor-core/docx`.
- * @packageDocumentation
- * @public
- */
 export { parseDocx } from './parser.mjs';
 export { createDocx, default as repackDocx, updateMultipleFiles } from './rezip.mjs';
 export { a as attemptSelectiveSave } from '../selectiveSave-jinP_4xa.mjs';

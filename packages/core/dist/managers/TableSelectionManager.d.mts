@@ -1,22 +1,3 @@
-/**
- * TableSelectionManager
- *
- * Framework-agnostic class for managing table cell selection state.
- * Extracted from the React `useTableSelection` hook.
- *
- * Handles:
- * - Cell selection via data-attribute queries on the DOM
- * - Table document operations (add/delete rows/columns, merge/split)
- *
- * @remarks
- * Tagged `@internal` post-1.0 cut. Adapters bind to this class today,
- * but consumers should reach for `useTableSelection()` (React/Vue) instead
- * of this raw subpath. The subpath stays in `package.json` `exports` for
- * back-compat; expect it to move behind a public surface in a future major.
- *
- * @packageDocumentation
- * @internal
- */
 import { S as Subscribable } from '../Subscribable-DOz6Ohoo.mjs';
 import { TableSelectionSnapshot, CellCoordinates } from './types.mjs';
 import { Document } from '../types/document.mjs';

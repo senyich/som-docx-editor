@@ -1,21 +1,3 @@
-/**
- * Walk the PM doc once and derive (a) the tracked-change list and (b) a
- * comment→revision overlap map for threading. Adjacent entries from the
- * same revision are merged; deletion+insertion pairs from the same
- * author/date become a single `replacement` entry (matches Word's UX
- * for replace ops).
- *
- * Pure function — no React, no Vue, no side effects. Single O(N) walk
- * over text nodes. Consumers building custom sidebars should prefer the
- * adapter-specific wrappers (`useTrackedChanges` in
- * `@eigenpal/docx-editor-react/hooks` and
- * `@eigenpal/docx-editor-vue/composables`), which add the memoization
- * and reactivity layer. Reach for the core function directly for
- * server-side analysis or test fixtures.
- *
- * @packageDocumentation
- * @public
- */
 import { EditorState } from 'prosemirror-state';
 import { TrackedChangeEntry } from '../../utils/comments.js';
 import '../../content-C8fc_tL6.js';

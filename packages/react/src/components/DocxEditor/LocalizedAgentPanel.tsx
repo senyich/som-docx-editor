@@ -1,6 +1,42 @@
-import { AgentPanel } from '@eigenpal/docx-editor-agents/react';
 import { useTranslation } from '../../i18n';
 import type { AgentPanelOptions } from './types';
+
+// Simple stub for AgentPanel since @som/docx-editor-agents is not available
+function AgentPanel({
+  title,
+  closeLabel,
+  resizeHandleLabel,
+  defaultWidth,
+  minWidth,
+  maxWidth,
+  onClose,
+  closed,
+  children,
+}: {
+  title: string;
+  icon?: React.ReactNode;
+  closeLabel: string;
+  resizeHandleLabel: string;
+  defaultWidth?: number;
+  minWidth?: number;
+  maxWidth?: number;
+  onClose: () => void;
+  closed: boolean;
+  children: React.ReactNode;
+}) {
+  if (closed) return null;
+  return (
+    <div style={{ width: defaultWidth ?? 300, minWidth, maxWidth }}>
+      <div>
+        <span>{title}</span>
+        <button onClick={onClose} aria-label={closeLabel}>
+          ×
+        </button>
+      </div>
+      <div>{children}</div>
+    </div>
+  );
+}
 
 /**
  * Inner wrapper that calls `useTranslation` to forward localised labels

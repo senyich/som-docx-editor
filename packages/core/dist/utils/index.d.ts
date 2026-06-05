@@ -1,12 +1,3 @@
-/**
- * Editor utilities (curated public surface).
- *
- * The named exports below are the public API contract. Adding a helper
- * to a source module does not automatically make it public — it must
- * be added to this barrel to be reachable from `@eigenpal/docx-editor-core/utils`.
- * @packageDocumentation
- * @public
- */
 export { PIXELS_PER_INCH, TWIPS_PER_INCH, clamp, eighthsToPixels, emuToPixels, emuToTwips, formatPx, halfPointsToPixels, halfPointsToPoints, pixelsToEmu, pixelsToTwips, pointsToHalfPoints, pointsToPixels, roundPixels, twipsToEmu, twipsToPixels } from './units.js';
 export { C as CreateEmptyDocumentOptions, P as ProcessTemplateOptions, a as ProcessTemplateResult, T as TemplateError, z as ThemeMatrixCell, b as blendColors, c as colorsEqual, d as createDocumentWithText, e as createEmptyDocument, f as createRgbColor, g as createTemplateProcessor, h as createThemeColor, i as darkenColor, A as ensureHexPrefix, B as generateThemeTintShadeMatrix, j as getContrastingColor, k as getMissingVariables, l as getTemplateTags, D as getThemeTintShadeHex, m as isBlack, n as isWhite, o as lightenColor, p as parseColorString, q as previewTemplate, r as processTemplate, s as processTemplateAdvanced, F as processTemplateAndDownload, t as processTemplateAsBlob, u as processTemplateDetailed, v as resolveColor, G as resolveColorToHex, w as resolveHighlightColor, E as resolveHighlightToCss, x as resolveShadingColor, y as validateTemplate } from '../colorResolver-8A-qj-LP.js';
 import { m as Run, P as Paragraph } from '../content-C8fc_tL6.js';

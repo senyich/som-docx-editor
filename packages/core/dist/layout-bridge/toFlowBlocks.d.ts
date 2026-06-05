@@ -1,15 +1,3 @@
-/**
- * ProseMirror to FlowBlock Converter
- *
- * Converts a ProseMirror document into FlowBlock[] for the layout engine.
- * Tracks pmStart/pmEnd positions for click-to-position mapping.
- *
- * The deep import `@eigenpal/.../layout-bridge/toFlowBlocks` is part of the
- * public surface (Vue adapter + tests), so the per-domain helpers under
- * ./toFlowBlocks/ are re-exported from here to keep that path stable.
- * @packageDocumentation
- * @public
- */
 import { Node } from 'prosemirror-model';
 import { BorderStyle, FlowBlock } from '../layout-engine/types.js';
 import { T as Theme } from '../styles-BWqX2AS-.js';

@@ -1,5 +1,5 @@
 {
-  "name": "@eigenpal/docx-editor-core",
+  "name": "@som/docx-editor-core",
   "version": "1.2.1",
   "sideEffects": false,
   "description": "Framework-agnostic core for DOCX parsing, editing, and rendering",
@@ -316,199 +316,77 @@
   },
   "typesVersions": {
     "*": {
-      "headless": [
-        "./dist/headless.d.ts"
-      ],
-      "core-plugins": [
-        "./dist/core-plugins.d.ts"
-      ],
-      "mcp": [
-        "./dist/mcp.d.ts"
-      ],
-      "prosemirror": [
-        "./dist/prosemirror/index.d.ts"
-      ],
-      "prosemirror/extensions": [
-        "./dist/prosemirror/extensions/index.d.ts"
-      ],
-      "prosemirror/conversion": [
-        "./dist/prosemirror/conversion/index.d.ts"
-      ],
-      "prosemirror/commands": [
-        "./dist/prosemirror/commands/index.d.ts"
-      ],
-      "prosemirror/plugins": [
-        "./dist/prosemirror/plugins/index.d.ts"
-      ],
-      "prosemirror/utils/ClickPositionResolver": [
-        "./dist/prosemirror/utils/ClickPositionResolver.d.ts"
-      ],
-      "prosemirror/utils/extractTrackedChanges": [
-        "./dist/prosemirror/utils/extractTrackedChanges.d.ts"
-      ],
-      "prosemirror/utils/LayoutSelectionGate": [
-        "./dist/prosemirror/utils/LayoutSelectionGate.d.ts"
-      ],
-      "prosemirror/utils/PointerEventHandler": [
-        "./dist/prosemirror/utils/PointerEventHandler.d.ts"
-      ],
-      "prosemirror/utils/visualLineNavigation": [
-        "./dist/prosemirror/utils/visualLineNavigation.d.ts"
-      ],
-      "prosemirror/extensions/nodes/TableExtension": [
-        "./dist/prosemirror/extensions/nodes/TableExtension.d.ts"
-      ],
-      "prosemirror/template/prosemirror-plugin": [
-        "./dist/prosemirror/template/prosemirror-plugin.d.ts"
-      ],
-      "docx": [
-        "./dist/docx/index.d.ts"
-      ],
-      "docx/wrapTypes": [
-        "./dist/docx/wrapTypes.d.ts"
-      ],
-      "docx/serializer": [
-        "./dist/docx/serializer/index.d.ts"
-      ],
-      "agent": [
-        "./dist/agent/index.d.ts"
-      ],
-      "layout-engine": [
-        "./dist/layout-engine/index.d.ts"
-      ],
-      "layout-painter": [
-        "./dist/layout-painter/index.d.ts"
-      ],
-      "layout-bridge": [
-        "./dist/layout-bridge/index.d.ts"
-      ],
-      "plugin-api": [
-        "./dist/plugin-api/index.d.ts"
-      ],
-      "plugin-api/RenderedDomContext": [
-        "./dist/plugin-api/RenderedDomContext.d.ts"
-      ],
-      "plugin-api/resolveItemPositions": [
-        "./dist/plugin-api/resolveItemPositions.d.ts"
-      ],
-      "plugin-api/types": [
-        "./dist/plugin-api/types.d.ts"
-      ],
-      "types/document": [
-        "./dist/types/document.d.ts"
-      ],
-      "types/content": [
-        "./dist/types/content.d.ts"
-      ],
-      "types/agentApi": [
-        "./dist/types/agentApi.d.ts"
-      ],
-      "utils": [
-        "./dist/utils/index.d.ts"
-      ],
-      "utils/cardStyles": [
-        "./dist/utils/cardStyles.d.ts"
-      ],
-      "utils/comments": [
-        "./dist/utils/comments.d.ts"
-      ],
-      "utils/findReplace": [
-        "./dist/utils/findReplace.d.ts"
-      ],
-      "utils/findVerticalScrollParent": [
-        "./dist/utils/findVerticalScrollParent.d.ts"
-      ],
-      "utils/fontOptions": [
-        "./dist/utils/fontOptions.d.ts"
-      ],
-      "utils/headingCollector": [
-        "./dist/utils/headingCollector.d.ts"
-      ],
-      "utils/highlightColors": [
-        "./dist/utils/highlightColors.d.ts"
-      ],
-      "utils/listState": [
-        "./dist/utils/listState.d.ts"
-      ],
-      "utils/reportIssue": [
-        "./dist/utils/reportIssue.d.ts"
-      ],
-      "utils/sidebarConstants": [
-        "./dist/utils/sidebarConstants.d.ts"
-      ],
-      "utils/textSelection": [
-        "./dist/utils/textSelection.d.ts"
-      ],
-      "utils/units": [
-        "./dist/utils/units.d.ts"
-      ],
-      "docx/parser": [
-        "./dist/docx/parser.d.ts"
-      ],
-      "docx/rezip": [
-        "./dist/docx/rezip.d.ts"
-      ],
-      "layout-bridge/clickToPositionDom": [
-        "./dist/layout-bridge/clickToPositionDom.d.ts"
-      ],
-      "layout-bridge/measuring": [
-        "./dist/layout-bridge/measuring/index.d.ts"
-      ],
-      "layout-bridge/tableInsertHover": [
-        "./dist/layout-bridge/tableInsertHover.d.ts"
-      ],
-      "layout-bridge/toFlowBlocks": [
-        "./dist/layout-bridge/toFlowBlocks.d.ts"
-      ],
-      "layout-engine/types": [
-        "./dist/layout-engine/types.d.ts"
-      ],
-      "layout-painter/renderPage": [
-        "./dist/layout-painter/renderPage.d.ts"
-      ],
-      "managers/AutoSaveManager": [
-        "./dist/managers/AutoSaveManager.d.ts"
-      ],
-      "managers/TableSelectionManager": [
-        "./dist/managers/TableSelectionManager.d.ts"
-      ],
-      "managers/types": [
-        "./dist/managers/types.d.ts"
-      ],
-      "prosemirror/commands/formatting": [
-        "./dist/prosemirror/commands/formatting.d.ts"
-      ],
-      "prosemirror/commands/pageBreak": [
-        "./dist/prosemirror/commands/pageBreak.d.ts"
-      ],
-      "prosemirror/commands/paragraph": [
-        "./dist/prosemirror/commands/paragraph.d.ts"
-      ],
-      "prosemirror/conversion/fromProseDoc": [
-        "./dist/prosemirror/conversion/fromProseDoc.d.ts"
-      ],
-      "prosemirror/plugins/selectionTracker": [
-        "./dist/prosemirror/plugins/selectionTracker.d.ts"
-      ],
-      "prosemirror/schema": [
-        "./dist/prosemirror/schema/index.d.ts"
-      ],
-      "prosemirror/styles": [
-        "./dist/prosemirror/styles/index.d.ts"
-      ]
+      "headless": ["./dist/headless.d.ts"],
+      "core-plugins": ["./dist/core-plugins.d.ts"],
+      "mcp": ["./dist/mcp.d.ts"],
+      "prosemirror": ["./dist/prosemirror/index.d.ts"],
+      "prosemirror/extensions": ["./dist/prosemirror/extensions/index.d.ts"],
+      "prosemirror/conversion": ["./dist/prosemirror/conversion/index.d.ts"],
+      "prosemirror/commands": ["./dist/prosemirror/commands/index.d.ts"],
+      "prosemirror/plugins": ["./dist/prosemirror/plugins/index.d.ts"],
+      "prosemirror/utils/ClickPositionResolver": ["./dist/prosemirror/utils/ClickPositionResolver.d.ts"],
+      "prosemirror/utils/extractTrackedChanges": ["./dist/prosemirror/utils/extractTrackedChanges.d.ts"],
+      "prosemirror/utils/LayoutSelectionGate": ["./dist/prosemirror/utils/LayoutSelectionGate.d.ts"],
+      "prosemirror/utils/PointerEventHandler": ["./dist/prosemirror/utils/PointerEventHandler.d.ts"],
+      "prosemirror/utils/visualLineNavigation": ["./dist/prosemirror/utils/visualLineNavigation.d.ts"],
+      "prosemirror/extensions/nodes/TableExtension": ["./dist/prosemirror/extensions/nodes/TableExtension.d.ts"],
+      "prosemirror/template/prosemirror-plugin": ["./dist/prosemirror/template/prosemirror-plugin.d.ts"],
+      "docx": ["./dist/docx/index.d.ts"],
+      "docx/wrapTypes": ["./dist/docx/wrapTypes.d.ts"],
+      "docx/serializer": ["./dist/docx/serializer/index.d.ts"],
+      "agent": ["./dist/agent/index.d.ts"],
+      "layout-engine": ["./dist/layout-engine/index.d.ts"],
+      "layout-painter": ["./dist/layout-painter/index.d.ts"],
+      "layout-bridge": ["./dist/layout-bridge/index.d.ts"],
+      "plugin-api": ["./dist/plugin-api/index.d.ts"],
+      "plugin-api/RenderedDomContext": ["./dist/plugin-api/RenderedDomContext.d.ts"],
+      "plugin-api/resolveItemPositions": ["./dist/plugin-api/resolveItemPositions.d.ts"],
+      "plugin-api/types": ["./dist/plugin-api/types.d.ts"],
+      "types/document": ["./dist/types/document.d.ts"],
+      "types/content": ["./dist/types/content.d.ts"],
+      "types/agentApi": ["./dist/types/agentApi.d.ts"],
+      "utils": ["./dist/utils/index.d.ts"],
+      "utils/cardStyles": ["./dist/utils/cardStyles.d.ts"],
+      "utils/comments": ["./dist/utils/comments.d.ts"],
+      "utils/findReplace": ["./dist/utils/findReplace.d.ts"],
+      "utils/findVerticalScrollParent": ["./dist/utils/findVerticalScrollParent.d.ts"],
+      "utils/fontOptions": ["./dist/utils/fontOptions.d.ts"],
+      "utils/headingCollector": ["./dist/utils/headingCollector.d.ts"],
+      "utils/highlightColors": ["./dist/utils/highlightColors.d.ts"],
+      "utils/listState": ["./dist/utils/listState.d.ts"],
+      "utils/reportIssue": ["./dist/utils/reportIssue.d.ts"],
+      "utils/sidebarConstants": ["./dist/utils/sidebarConstants.d.ts"],
+      "utils/textSelection": ["./dist/utils/textSelection.d.ts"],
+      "utils/units": ["./dist/utils/units.d.ts"],
+      "docx/parser": ["./dist/docx/parser.d.ts"],
+      "docx/rezip": ["./dist/docx/rezip.d.ts"],
+      "layout-bridge/clickToPositionDom": ["./dist/layout-bridge/clickToPositionDom.d.ts"],
+      "layout-bridge/measuring": ["./dist/layout-bridge/measuring/index.d.ts"],
+      "layout-bridge/tableInsertHover": ["./dist/layout-bridge/tableInsertHover.d.ts"],
+      "layout-bridge/toFlowBlocks": ["./dist/layout-bridge/toFlowBlocks.d.ts"],
+      "layout-engine/types": ["./dist/layout-engine/types.d.ts"],
+      "layout-painter/renderPage": ["./dist/layout-painter/renderPage.d.ts"],
+      "managers/AutoSaveManager": ["./dist/managers/AutoSaveManager.d.ts"],
+      "managers/TableSelectionManager": ["./dist/managers/TableSelectionManager.d.ts"],
+      "managers/types": ["./dist/managers/types.d.ts"],
+      "prosemirror/commands/formatting": ["./dist/prosemirror/commands/formatting.d.ts"],
+      "prosemirror/commands/pageBreak": ["./dist/prosemirror/commands/pageBreak.d.ts"],
+      "prosemirror/commands/paragraph": ["./dist/prosemirror/commands/paragraph.d.ts"],
+      "prosemirror/conversion/fromProseDoc": ["./dist/prosemirror/conversion/fromProseDoc.d.ts"],
+      "prosemirror/plugins/selectionTracker": ["./dist/prosemirror/plugins/selectionTracker.d.ts"],
+      "prosemirror/schema": ["./dist/prosemirror/schema/index.d.ts"],
+      "prosemirror/styles": ["./dist/prosemirror/styles/index.d.ts"]
     }
   },
   "bin": {
     "docx-editor-mcp": "./dist/mcp-cli.mjs"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
-    "build": "NODE_OPTIONS=--max-old-space-size=8192 tsup && node scripts/copy-assets.mjs && node ../../scripts/inject-package-doc.mjs --package @eigenpal/docx-editor-core",
+    "build": "NODE_OPTIONS=--max-old-space-size=8192 tsup && node scripts/copy-assets.mjs && node ../../scripts/inject-package-doc.mjs --package @som/docx-editor-core",
     "typecheck": "tsc --noEmit",
-    "api:extract": "node ../../scripts/api-extractor.mjs --package @eigenpal/docx-editor-core --local",
-    "api:check": "node ../../scripts/api-extractor.mjs --package @eigenpal/docx-editor-core"
+    "api:extract": "node ../../scripts/api-extractor.mjs --package @som/docx-editor-core --local",
+    "api:check": "node ../../scripts/api-extractor.mjs --package @som/docx-editor-core"
   },
   "dependencies": {
     "docxtemplater": "^3.50.0",
@@ -517,46 +395,21 @@
     "xml-js": "^1.6.11"
   },
   "peerDependencies": {
-    "prosemirror-commands": "^1.5.2",
+    "prosemirror-commands": "^1.7.1",
     "prosemirror-dropcursor": "^1.8.2",
     "prosemirror-history": "^1.5.0",
-    "prosemirror-keymap": "^1.2.2",
-    "prosemirror-model": "^1.19.4",
-    "prosemirror-state": "^1.4.3",
+    "prosemirror-keymap": "^1.2.3",
+    "prosemirror-model": "^1.25.7",
+    "prosemirror-state": "^1.4.4",
     "prosemirror-tables": "^1.8.5",
     "prosemirror-transform": "^1.12.0",
-    "prosemirror-view": "^1.32.7"
+    "prosemirror-view": "^1.41.8"
   },
-  "devDependencies": {
-    "@microsoft/api-extractor": "^7.50.0",
-    "prosemirror-commands": "^1.5.2",
-    "prosemirror-dropcursor": "^1.8.2",
-    "prosemirror-history": "^1.5.0",
-    "prosemirror-keymap": "^1.2.2",
-    "prosemirror-model": "^1.19.4",
-    "prosemirror-state": "^1.4.3",
-    "prosemirror-tables": "^1.8.5",
-    "prosemirror-transform": "^1.12.0",
-    "prosemirror-view": "^1.41.6"
-  },
-  "keywords": [
-    "docx",
-    "editor",
-    "template",
-    "word",
-    "document",
-    "prosemirror"
-  ],
-  "author": {
-    "name": "Jedr Blaszyk",
-    "email": "jedr@eigenpal.com",
-    "url": "https://github.com/jedrazb"
-  },
+  "keywords": ["docx", "editor", "template", "word", "document", "prosemirror"],
   "license": "Apache-2.0",
-  "homepage": "https://docx-editor.dev/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eigenpal/docx-editor.git",
+    "url": "https://github.com/senyich/som-docx-editor.git",
     "directory": "packages/core"
   },
   "publishConfig": {

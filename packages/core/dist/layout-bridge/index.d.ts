@@ -1,13 +1,3 @@
-/**
- * Layout Bridge — measure, hit-test, and map between PM positions and pixels.
- *
- * @experimental Internal layer between the layout engine and rendering.
- * The named exports below are the public contract for adapter authors,
- * but the API is still evolving and may change in minor releases until
- * a third-party adapter validates it.
- * @packageDocumentation
- * @public
- */
 export { ToFlowBlocksOptions, convertBorderSpecToLayout, resetBlockIdCounter, resolveListTemplate, toFlowBlocks } from './toFlowBlocks.js';
 import { TableBlock, Fragment, FlowBlock, Measure, Page, TableFragment, TableMeasure, ParagraphBlock, ParagraphMeasure, Layout, PageMargins } from '../layout-engine/types.js';
 export { FloatPageGeometry, FloatingExclusionRect, FloatingImageZone, FloatingLineSegmentZone, FontMetrics, FontStyle, MeasureBlockFn, MeasureParagraphOptions, RunMeasurement, TextMeasurement, buildFontString, clampFloatingWrapMargins, clearAllCaches, clearFontMetricsCache, clearParagraphMeasureCache, clearTextWidthCache, findCharacterAtX, getCachedFontMetrics, getCachedParagraphMeasure, getCachedTextWidth, getCanvasContext, getFloatingMargins, getFontCacheSize, getFontMetrics, getParagraphCacheSize, getRunCharWidths, getTextCacheSize, getTotalCacheSize, getXForCharacter, halfPtToPx, hashParagraphBlock, measureBlocksWithFloats, measureParagraph, measureParagraphs, measureRun, measureText, measureTextWidth, ptToPx, pxToHalfPt, pxToPt, pxToTwips, rectsToFloatingZones, resetCanvasContext, setCachedFontMetrics, setCachedParagraphMeasure, setCachedTextWidth, setFontCacheSize, setParagraphCacheSize, setTextCacheSize, twipsToPx } from './measuring/index.js';

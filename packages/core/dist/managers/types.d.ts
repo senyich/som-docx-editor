@@ -1,10 +1,3 @@
-/**
- * Manager Types
- *
- * Framework-agnostic interfaces for the editor's manager classes.
- * @packageDocumentation
- * @public
- */
 import { EditorView } from 'prosemirror-view';
 import { Document } from '../types/document.js';
 import '../colors-C3vA7HUU.js';
