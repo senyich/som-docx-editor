@@ -1,6 +1,6 @@
 import { EditorState } from 'prosemirror-state';
 import { TrackedChangeEntry } from '../../utils/comments.mjs';
-import '../../content-3xF4WDE8.mjs';
+import '../../content-DNNVt10I.mjs';
 import '../../formatting-BH4hcZiq.mjs';
 import '../../colors-C3vA7HUU.mjs';
 import '../../docx/wrapTypes.mjs';

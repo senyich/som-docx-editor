@@ -2,7 +2,7 @@ import JSZip from 'jszip';
 import { Document } from '../types/document.js';
 import '../colors-C3vA7HUU.js';
 import '../formatting-_OXU8gLB.js';
-import '../content-C8fc_tL6.js';
+import '../content-E-cahBKn.js';
 import './wrapTypes.js';
 import '../watermark-DAcnAs_J.js';
 import '../styles-BWqX2AS-.js';

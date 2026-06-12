@@ -11,10 +11,10 @@ export { clearFontFamily, clearFontSize, clearFormatting, clearHighlight, clearT
 export { addTabStop, alignCenter, alignJustify, alignLeft, alignRight, applyStyle, clearStyle, decreaseIndent, decreaseListLevel, generateTOC, getListInfo, getParagraphAlignment, getParagraphBidi, getStyleId, increaseIndent, increaseListLevel, isInList, removeList, removeTabStop, setAlignment, setIndentFirstLine, setIndentLeft, setIndentRight, setLineSpacing, setLtr, setRtl, toggleBulletList, toggleNumberedList } from './commands/paragraph.js';
 export { a as addColumnLeft, b as addColumnRight, c as addRowAbove, d as addRowBelow, e as applyTableStyle, f as autoFitContents, g as deleteColumn, h as deleteRow, i as deleteTable, j as distributeColumns, k as insertTable, m as mergeCells, r as removeTableBorders, s as selectColumn, l as selectRow, n as selectTable, o as setAllTableBorders, p as setCellBorder, q as setCellFillColor, t as setCellMargins, u as setCellTextDirection, v as setCellVerticalAlign, w as setInsideTableBorders, x as setOutsideTableBorders, y as setRowHeight, z as setTableBorderColor, A as setTableBorderWidth, B as setTableBorders, C as setTableProperties, D as splitCell, E as toggleHeaderRow, F as toggleNoWrap } from '../table-P8esKWAc.js';
 export { insertPageBreak } from './commands/pageBreak.js';
-export { I as ImageAttrs, P as ParagraphAttrs } from '../nodes-75Q9GBxV.js';
+export { I as ImageAttrs, P as ParagraphAttrs } from '../nodes-cZAxqmMz.js';
 import { Node } from 'prosemirror-model';
-import { a as ContentControlFilter, f as ContentControlValue } from '../contentControlValues-DGDKD589.js';
-import { t as SdtType, u as SdtProperties, v as SdtDataBinding } from '../content-C8fc_tL6.js';
+import { a as ContentControlFilter, f as ContentControlValue } from '../contentControlValues-uo4coACN.js';
+import { u as SdtType, v as SdtProperties, w as SdtDataBinding } from '../content-E-cahBKn.js';
 export { f as findParagraphByParaId, a as findStartPosForParaId } from '../findParagraphByParaId-Maw_8M5D.js';
 export { LayoutSelectionGate } from './utils/LayoutSelectionGate.js';
 export { B as BorderPreset, T as TableContextInfo, g as getTableContext, i as isInTable } from '../borders-Z9hPno2u.js';

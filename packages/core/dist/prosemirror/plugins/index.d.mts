@@ -1,7 +1,7 @@
 export { SelectionChangeCallback, SelectionContext, createSelectionTrackerPlugin, extractSelectionContext, getSelectionContext, selectionTrackerKey } from './selectionTracker.mjs';
 import { PluginKey, EditorState, Transaction, Plugin } from 'prosemirror-state';
 export { c as createDocumentStylesPlugin, d as documentStylesKey, g as getDocumentStyleResolver } from '../../documentStyles-qR0VR2s0.mjs';
-import { R as RevisionInfo } from '../../content-3xF4WDE8.mjs';
+import { R as RevisionInfo } from '../../content-DNNVt10I.mjs';
 import '../../formatting-BH4hcZiq.mjs';
 import '../../colors-C3vA7HUU.mjs';
 import '../../styles-BOJ93SAm.mjs';

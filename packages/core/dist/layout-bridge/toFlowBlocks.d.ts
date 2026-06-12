@@ -1,7 +1,7 @@
 import { Node } from 'prosemirror-model';
 import { BorderStyle, FlowBlock } from '../layout-engine/types.js';
 import { T as Theme } from '../styles-BWqX2AS-.js';
-import { N as NumberFormat } from '../content-C8fc_tL6.js';
+import { N as NumberFormat } from '../content-E-cahBKn.js';
 import '../formatting-_OXU8gLB.js';
 import '../colors-C3vA7HUU.js';
 import '../docx/wrapTypes.js';

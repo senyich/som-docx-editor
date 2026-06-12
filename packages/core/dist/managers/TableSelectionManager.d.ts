@@ -1,13 +1,13 @@
 import { S as Subscribable } from '../Subscribable-DOz6Ohoo.js';
 import { TableSelectionSnapshot, CellCoordinates } from './types.js';
 import { Document } from '../types/document.js';
-import { T as Table } from '../content-C8fc_tL6.js';
+import { T as Table } from '../content-E-cahBKn.js';
 import 'prosemirror-view';
 import '../colors-C3vA7HUU.js';
 import '../formatting-_OXU8gLB.js';
-import '../docx/wrapTypes.js';
 import '../watermark-DAcnAs_J.js';
 import '../styles-BWqX2AS-.js';
+import '../docx/wrapTypes.js';
 
 /**
  * TableSelectionManager

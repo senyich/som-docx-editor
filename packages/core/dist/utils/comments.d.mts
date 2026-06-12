@@ -1,4 +1,4 @@
-import { P as Paragraph } from '../content-3xF4WDE8.mjs';
+import { P as Paragraph } from '../content-DNNVt10I.mjs';
 import '../formatting-BH4hcZiq.mjs';
 import '../colors-C3vA7HUU.mjs';
 import '../docx/wrapTypes.mjs';

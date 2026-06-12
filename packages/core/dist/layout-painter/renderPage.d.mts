@@ -1,7 +1,7 @@
 import { ImageRun, Page, ParagraphBlock, MeasuredLine, TabStop, Run, ParagraphFragment, ParagraphMeasure, ParagraphBorders, Fragment, TableFragment, TableBlock, TableMeasure, ImageFragment, ImageBlock, ImageMeasure, TextBoxFragment, TextBoxBlock, TextBoxMeasure, FlowBlock, Measure, Layout } from '../layout-engine/types.mjs';
 import '../anchoredObjectPosition-KJEyF-wr.mjs';
 import { Node } from 'prosemirror-model';
-import { I as ImageAttrs } from '../nodes-cEI7hVY2.mjs';
+import { I as ImageAttrs } from '../nodes-Co8n74DV.mjs';
 import { I as ImageLayoutTarget } from '../ImageExtension-BN327PNe.mjs';
 import { WrapType } from '../docx/wrapTypes.mjs';
 import { F as FootnoteRenderItem, H as HeaderFooterContent } from '../footnotes-lCH_P3N3.mjs';
@@ -9,7 +9,7 @@ export { a as HeaderFooterLayoutInfo, r as resolveHeaderFooterFloatingTablePosit
 import { B as BorderSpec } from '../colors-C3vA7HUU.mjs';
 import { W as Watermark } from '../watermark-DAcnAs_J.mjs';
 import { T as Theme } from '../styles-BOJ93SAm.mjs';
-import '../content-3xF4WDE8.mjs';
+import '../content-DNNVt10I.mjs';
 import '../formatting-BH4hcZiq.mjs';
 
 /**

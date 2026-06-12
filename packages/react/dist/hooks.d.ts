@@ -1,6 +1,6 @@
 import { Table, Document } from '@som/docx-editor-core/types/document';
-import { a as TableContext, c as TableAction, b as TableSplitConfig } from './useFindReplace-DsU-W1mJ.js';
-export { F as FindReplaceOptions, d as FindReplaceState, U as UseFindReplaceReturn, u as useFindReplace } from './useFindReplace-DsU-W1mJ.js';
+import { T as TableContext, a as TableAction, b as TableSplitConfig } from './TableToolbar-TgYwA1k8.js';
+export { F as FindReplaceOptions, c as FindReplaceState, U as UseFindReplaceReturn, u as useFindReplace } from './TableToolbar-TgYwA1k8.js';
 import * as React$1 from 'react';
 import React__default, { CSSProperties, RefObject } from 'react';
 import { HighlightRect, SelectionHighlightConfig, ParsedClipboardContent } from '@som/docx-editor-core/utils';

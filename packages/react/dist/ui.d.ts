@@ -5,58 +5,14 @@ import { FontOption } from '@som/docx-editor-core/utils/fontOptions';
 export { FontOption } from '@som/docx-editor-core/utils/fontOptions';
 import { ListState } from '@som/docx-editor-core/utils/listState';
 export { ListState, createDefaultListState } from '@som/docx-editor-core/utils/listState';
-import { T as TableSelection, a as TableContext, b as TableSplitConfig, c as TableAction } from './useFindReplace-DsU-W1mJ.js';
-export { F as FindReplaceOptions, d as FindReplaceState, e as TableToolbar, f as TableToolbarProps, U as UseFindReplaceReturn, u as useFindReplace } from './useFindReplace-DsU-W1mJ.js';
+import { d as TableSelection, T as TableContext, b as TableSplitConfig, a as TableAction } from './TableToolbar-TgYwA1k8.js';
+export { F as FindReplaceOptions, c as FindReplaceState, e as TableToolbar, f as TableToolbarProps, U as UseFindReplaceReturn, u as useFindReplace } from './TableToolbar-TgYwA1k8.js';
 import { SelectionContext, AIAction, AgentResponse } from '@som/docx-editor-core/types/agentApi';
 import { TranslationKey } from '@som/docx-editor-i18n';
 export { a as PrintButton, b as PrintButtonProps, P as PrintOptions, c as PrintStyles, f as formatPrintPageRange, g as getDefaultPrintOptions, i as isPrintSupported, o as openPrintWindow, p as parsePageRange, t as triggerPrint } from './PrintPreview-DEhwRBC_.js';
-export { K as DialogKeyboardShortcut, F as FindReplaceDialog, a as FindReplaceDialogProps, H as HyperlinkData, b as HyperlinkDialog, c as HyperlinkDialogProps, d as KeyboardShortcutsDialog, e as KeyboardShortcutsDialogProps, P as PasteOption, f as PasteSpecialDialog, g as PasteSpecialDialogProps, S as ShortcutCategory, U as UseKeyboardShortcutsDialogOptions, h as UseKeyboardShortcutsDialogReturn, i as UsePasteSpecialOptions, j as UsePasteSpecialReturn, k as formatShortcutKeys, l as getAllCategories, m as getAllPasteOptions, n as getCategoryLabel, o as getCommonShortcuts, p as getDefaultPasteOption, q as getDefaultShortcuts, r as getPasteOption, s as getShortcutsByCategory, t as isPasteSpecialShortcut, u as useHyperlinkDialog, v as useKeyboardShortcutsDialog, w as usePasteSpecial } from './KeyboardShortcutsDialog-Dv6nAO6K.js';
+export { K as DialogKeyboardShortcut, F as FindReplaceDialog, a as FindReplaceDialogProps, H as HyperlinkData, b as HyperlinkDialog, c as HyperlinkDialogProps, d as KeyboardShortcutsDialog, e as KeyboardShortcutsDialogProps, P as PasteOption, f as PasteSpecialDialog, g as PasteSpecialDialogProps, S as ShortcutCategory, U as UseKeyboardShortcutsDialogOptions, h as UseKeyboardShortcutsDialogReturn, i as UsePasteSpecialOptions, j as UsePasteSpecialReturn, o as formatShortcutKeys, p as getAllCategories, q as getAllPasteOptions, r as getCategoryLabel, s as getCommonShortcuts, t as getDefaultPasteOption, u as getDefaultShortcuts, w as getPasteOption, x as getShortcutsByCategory, C as isPasteSpecialShortcut, L as useHyperlinkDialog, I as useKeyboardShortcutsDialog, J as usePasteSpecial } from './KeyboardShortcutsDialog-D_fXJe4C.js';
 export { FindMatch, FindOptions, FindResult, HighlightOptions, createDefaultFindOptions, createSearchPattern, escapeRegexString, findAllMatches, findInDocument, findInParagraph, getDefaultHighlightOptions, getMatchCountText, isEmptySearch, replaceAllInContent, replaceFirstInContent, scrollToMatch } from '@som/docx-editor-core/utils/findReplace';
 import '@som/docx-editor-core/utils';
-
-interface FontPickerProps {
-    value?: string;
-    onChange?: (fontFamily: string) => void;
-    fonts?: FontOption[];
-    disabled?: boolean;
-    className?: string;
-    placeholder?: string;
-    width?: number | string;
-    showPreview?: boolean;
-}
-declare function FontPicker({ value, onChange, fonts, disabled, className, placeholder, width, showPreview, }: FontPickerProps): react_jsx_runtime.JSX.Element;
-
-/**
- * Props for the ListButtons component
- */
-interface ListButtonsProps {
-    /** Current list state of the selection */
-    listState?: ListState;
-    /** Callback when bullet list is toggled */
-    onBulletList?: () => void;
-    /** Callback when numbered list is toggled */
-    onNumberedList?: () => void;
-    /** Callback to increase list indent */
-    onIndent?: () => void;
-    /** Callback to decrease list indent */
-    onOutdent?: () => void;
-    /** Whether the buttons are disabled */
-    disabled?: boolean;
-    /** Additional CSS class name */
-    className?: string;
-    /** Additional inline styles */
-    style?: CSSProperties;
-    /** Show indent/outdent buttons */
-    showIndentButtons?: boolean;
-    /** Compact mode (smaller buttons) */
-    compact?: boolean;
-    /** Whether the current paragraph has left indentation (for enabling outdent) */
-    hasIndent?: boolean;
-}
-/**
- * List buttons component for bullet/numbered list controls
- */
-declare function ListButtons({ listState, onBulletList, onNumberedList, onIndent, onOutdent, disabled, className, style, showIndentButtons, compact, hasIndent, }: ListButtonsProps): react_jsx_runtime.JSX.Element;
 
 /**
  * Document-model table operations — pure functions over the Table type:
@@ -108,6 +64,50 @@ declare function mergeCells(table: Table, selection: TableSelection): Table;
  * `getTableSplitCellDialogConfig()` and `splitTableCell()` instead.
  */
 declare function splitCell(table: Table, rowIndex: number, columnIndex: number): Table;
+
+interface FontPickerProps {
+    value?: string;
+    onChange?: (fontFamily: string) => void;
+    fonts?: FontOption[];
+    disabled?: boolean;
+    className?: string;
+    placeholder?: string;
+    width?: number | string;
+    showPreview?: boolean;
+}
+declare function FontPicker({ value, onChange, fonts, disabled, className, placeholder, width, showPreview, }: FontPickerProps): react_jsx_runtime.JSX.Element;
+
+/**
+ * Props for the ListButtons component
+ */
+interface ListButtonsProps {
+    /** Current list state of the selection */
+    listState?: ListState;
+    /** Callback when bullet list is toggled */
+    onBulletList?: () => void;
+    /** Callback when numbered list is toggled */
+    onNumberedList?: () => void;
+    /** Callback to increase list indent */
+    onIndent?: () => void;
+    /** Callback to decrease list indent */
+    onOutdent?: () => void;
+    /** Whether the buttons are disabled */
+    disabled?: boolean;
+    /** Additional CSS class name */
+    className?: string;
+    /** Additional inline styles */
+    style?: CSSProperties;
+    /** Show indent/outdent buttons */
+    showIndentButtons?: boolean;
+    /** Compact mode (smaller buttons) */
+    compact?: boolean;
+    /** Whether the current paragraph has left indentation (for enabling outdent) */
+    hasIndent?: boolean;
+}
+/**
+ * List buttons component for bullet/numbered list controls
+ */
+declare function ListButtons({ listState, onBulletList, onNumberedList, onIndent, onOutdent, disabled, className, style, showIndentButtons, compact, hasIndent, }: ListButtonsProps): react_jsx_runtime.JSX.Element;
 
 /**
  * Current formatting state of the selection

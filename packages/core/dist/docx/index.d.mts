@@ -2,7 +2,7 @@ export { parseDocx } from './parser.mjs';
 export { createDocx, default as repackDocx, updateMultipleFiles } from './rezip.mjs';
 export { a as attemptSelectiveSave } from '../selectiveSave-jinP_4xa.mjs';
 export { b as buildPatchedDocumentXml, v as validatePatchSafety } from '../selectiveXmlPatch-ypkxlTD_.mjs';
-import { I as Image, k as NumberingDefinitions, L as ListLevel, A as AbstractNumbering, al as NumberingInstance, N as NumberFormat, E as Endnote, F as Footnote, U as EndnoteProperties, _ as FootnoteProperties, m as Run, X as FieldType, V as Field, ay as SimpleField, H as Hyperlink, as as Shape, T as Table, o as TableCell, P as Paragraph, aD as TextBox, a4 as ImageSize, a3 as ImagePosition, a6 as ImageWrap, B as BlockContent, e as Comment } from '../content-3xF4WDE8.mjs';
+import { I as Image, k as NumberingDefinitions, L as ListLevel, A as AbstractNumbering, al as NumberingInstance, N as NumberFormat, E as Endnote, F as Footnote, U as EndnoteProperties, _ as FootnoteProperties, m as Run, X as FieldType, V as Field, ay as SimpleField, H as Hyperlink, as as Shape, T as Table, o as TableCell, P as Paragraph, aD as TextBox, a4 as ImageSize, a3 as ImagePosition, a6 as ImageWrap, B as BlockContent, e as Comment } from '../content-DNNVt10I.mjs';
 import { b as RelationshipMap, M as MediaFile, a as Style, T as Theme } from '../styles-BOJ93SAm.mjs';
 import { Element } from 'xml-js';
 import { i as TabStopAlignment, h as TabLeader, e as TabStop, C as CellMargins, F as FloatingTableProperties, j as TableBorders, f as TableLook, k as TableMeasurement, a as TableFormatting } from '../formatting-BH4hcZiq.mjs';

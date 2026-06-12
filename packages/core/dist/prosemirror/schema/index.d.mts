@@ -1,11 +1,11 @@
 import * as prosemirror_model from 'prosemirror-model';
 import { a as ExtensionManager } from '../../types-RchZmPFN.mjs';
-export { I as ImageAttrs, a as ImagePositionAttrs, P as ParagraphAttrs, T as TableAttrs, b as TableCellAttrs, c as TableRowAttrs } from '../../nodes-cEI7hVY2.mjs';
+export { I as ImageAttrs, a as ImagePositionAttrs, P as ParagraphAttrs, T as TableAttrs, b as TableCellAttrs, c as TableRowAttrs } from '../../nodes-Co8n74DV.mjs';
 export { F as FontFamilyAttrs, a as FontSizeAttrs, H as HyperlinkAttrs, T as TextColorAttrs, U as UnderlineAttrs } from '../../marks-BY573yZn.mjs';
 import 'prosemirror-state';
 import '../../colors-C3vA7HUU.mjs';
 import '../../formatting-BH4hcZiq.mjs';
-import '../../content-3xF4WDE8.mjs';
+import '../../content-DNNVt10I.mjs';
 import '../../docx/wrapTypes.mjs';
 import '../../watermark-DAcnAs_J.mjs';
 

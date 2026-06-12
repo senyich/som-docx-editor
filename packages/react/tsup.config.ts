@@ -28,6 +28,8 @@ export default defineConfig({
     'prosemirror-tables',
     'prosemirror-transform',
     'prosemirror-view',
+    '@som/docx-editor-core',
+    '@som/docx-editor-i18n',
   ],
   injectStyle: false,
 });

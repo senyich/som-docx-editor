@@ -11,10 +11,10 @@ export { clearFontFamily, clearFontSize, clearFormatting, clearHighlight, clearT
 export { addTabStop, alignCenter, alignJustify, alignLeft, alignRight, applyStyle, clearStyle, decreaseIndent, decreaseListLevel, generateTOC, getListInfo, getParagraphAlignment, getParagraphBidi, getStyleId, increaseIndent, increaseListLevel, isInList, removeList, removeTabStop, setAlignment, setIndentFirstLine, setIndentLeft, setIndentRight, setLineSpacing, setLtr, setRtl, toggleBulletList, toggleNumberedList } from './commands/paragraph.mjs';
 export { a as addColumnLeft, b as addColumnRight, c as addRowAbove, d as addRowBelow, e as applyTableStyle, f as autoFitContents, g as deleteColumn, h as deleteRow, i as deleteTable, j as distributeColumns, k as insertTable, m as mergeCells, r as removeTableBorders, s as selectColumn, l as selectRow, n as selectTable, o as setAllTableBorders, p as setCellBorder, q as setCellFillColor, t as setCellMargins, u as setCellTextDirection, v as setCellVerticalAlign, w as setInsideTableBorders, x as setOutsideTableBorders, y as setRowHeight, z as setTableBorderColor, A as setTableBorderWidth, B as setTableBorders, C as setTableProperties, D as splitCell, E as toggleHeaderRow, F as toggleNoWrap } from '../table-_t_W8oQf.mjs';
 export { insertPageBreak } from './commands/pageBreak.mjs';
-export { I as ImageAttrs, P as ParagraphAttrs } from '../nodes-cEI7hVY2.mjs';
+export { I as ImageAttrs, P as ParagraphAttrs } from '../nodes-Co8n74DV.mjs';
 import { Node } from 'prosemirror-model';
-import { a as ContentControlFilter, f as ContentControlValue } from '../contentControlValues-DjWvoJQ-.mjs';
-import { t as SdtType, u as SdtProperties, v as SdtDataBinding } from '../content-3xF4WDE8.mjs';
+import { a as ContentControlFilter, f as ContentControlValue } from '../contentControlValues-ehEryUvs.mjs';
+import { u as SdtType, v as SdtProperties, w as SdtDataBinding } from '../content-DNNVt10I.mjs';
 export { f as findParagraphByParaId, a as findStartPosForParaId } from '../findParagraphByParaId-Maw_8M5D.mjs';
 export { LayoutSelectionGate } from './utils/LayoutSelectionGate.mjs';
 export { B as BorderPreset, T as TableContextInfo, g as getTableContext, i as isInTable } from '../borders-BH_GoYU3.mjs';

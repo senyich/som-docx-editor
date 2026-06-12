@@ -1,6 +1,6 @@
 import { Node } from 'prosemirror-model';
 import { Document } from '../../types/document.js';
-import { B as BlockContent } from '../../content-C8fc_tL6.js';
+import { B as BlockContent } from '../../content-E-cahBKn.js';
 import '../../colors-C3vA7HUU.js';
 import '../../formatting-_OXU8gLB.js';
 import '../../watermark-DAcnAs_J.js';

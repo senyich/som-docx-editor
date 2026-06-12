@@ -1,6 +1,6 @@
 import { WrapTextDirection, TextRun, ParagraphBlock, ParagraphMeasure, FlowBlock, Measure } from '../../layout-engine/types.mjs';
 import { P as PageGeometry } from '../../anchoredObjectPosition-KJEyF-wr.mjs';
-import '../../content-3xF4WDE8.mjs';
+import '../../content-DNNVt10I.mjs';
 import '../../formatting-BH4hcZiq.mjs';
 import '../../colors-C3vA7HUU.mjs';
 import '../../docx/wrapTypes.mjs';

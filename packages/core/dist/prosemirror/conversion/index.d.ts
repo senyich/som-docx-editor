@@ -1,7 +1,7 @@
 import { Node } from 'prosemirror-model';
 import { Document } from '../../types/document.js';
 import { S as StyleDefinitions, T as Theme } from '../../styles-BWqX2AS-.js';
-import { B as BlockContent } from '../../content-C8fc_tL6.js';
+import { B as BlockContent } from '../../content-E-cahBKn.js';
 export { fromProseDoc, proseDocToBlocks, updateDocumentContent } from './fromProseDoc.js';
 import '../../colors-C3vA7HUU.js';
 import '../../formatting-_OXU8gLB.js';

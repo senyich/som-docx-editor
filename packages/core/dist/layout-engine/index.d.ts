@@ -1,7 +1,7 @@
 import { Page, PageMargins, ColumnLayout, Fragment, FlowBlock, Measure, SectionBreakBlock, Layout, TextBoxBlock, TableMeasure, LayoutOptions } from './types.js';
 export { BlockId, BorderStyle, CellBorderSpec, CellBorders, ColumnBreakBlock, ColumnBreakMeasure, DEFAULT_TEXTBOX_MARGINS, DEFAULT_TEXTBOX_WIDTH, DocumentPosition, FieldRun, FloatingTablePosition, FootnoteContent, FragmentBase, HeaderFooterContentHeights, HeaderFooterLayout, HitTestResult, HyperlinkInfo, ImageBlock, ImageFragment, ImageMeasure, ImageRun, ImageRunPosition, LineBreakRun, ListNumPr, MeasuredLine, MeasuredLineSegment, PageBreakBlock, PageBreakMeasure, ParagraphAttrs, ParagraphBlock, ParagraphBorders, ParagraphFragment, ParagraphIndent, ParagraphMeasure, ParagraphSpacing, Run, RunFormatting, SdtGroup, SectionBreakMeasure, TabAlignment, TabRun, TabStop, TableBlock, TableCell, TableCellMeasure, TableFragment, TableRow, TableRowMeasure, TextBoxFragment, TextBoxMeasure, TextRun, WrapTextDirection, assertExhaustiveFlowBlock } from './types.js';
 export { isFloatingWrapType, isWrapNone, wrapsAroundText } from '../docx/wrapTypes.js';
-import '../content-C8fc_tL6.js';
+import '../content-E-cahBKn.js';
 import '../formatting-_OXU8gLB.js';
 import '../colors-C3vA7HUU.js';
 import '../watermark-DAcnAs_J.js';

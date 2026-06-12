@@ -1,5 +1,5 @@
-export { c as serializeBlockContent, a as serializeDocument, s as serializeDocumentBody, b as serializeSectionProperties } from '../../sectionPropertiesSerializer-D86QlzlT.mjs';
-import { P as Paragraph, m as Run, T as Table, y as HeaderFooter, e as Comment, E as Endnote, F as Footnote } from '../../content-3xF4WDE8.mjs';
+export { c as serializeBlockContent, a as serializeDocument, s as serializeDocumentBody, b as serializeSectionProperties } from '../../sectionPropertiesSerializer-DyrA7AOj.mjs';
+import { P as Paragraph, m as Run, T as Table, t as HeaderFooter, e as Comment, E as Endnote, F as Footnote } from '../../content-DNNVt10I.mjs';
 import '../../types/document.mjs';
 import '../../colors-C3vA7HUU.mjs';
 import '../../formatting-BH4hcZiq.mjs';

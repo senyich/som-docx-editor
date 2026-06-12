@@ -2,7 +2,7 @@ import { M as McpToolDefinition, e as McpSession, J as JsonSchema } from './type
 import './types/document.js';
 import './colors-C3vA7HUU.js';
 import './formatting-_OXU8gLB.js';
-import './content-C8fc_tL6.js';
+import './content-E-cahBKn.js';
 import './docx/wrapTypes.js';
 import './watermark-DAcnAs_J.js';
 import './styles-BWqX2AS-.js';
