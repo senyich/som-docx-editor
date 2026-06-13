@@ -1,1 +1,0 @@
-'use strict';var chunk4RTVLMRZ_js=require('./chunk-4RTVLMRZ.js');var t=new chunk4RTVLMRZ_js.q(chunk4RTVLMRZ_js.p());t.buildSchema();t.initializeRuntime();var s=t,n=t.getSchema();exports.a=s;exports.b=n;

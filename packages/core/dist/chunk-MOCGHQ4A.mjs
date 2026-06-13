@@ -1,1 +1,0 @@
-import {c,e,j}from'./chunk-3ANZ3252.mjs';var l=720,s=31680;function p(e$1){let n=e$1?c(e$1):null,o=n?e(n,"w","defaultTabStop"):null,t=o?parseInt(j(o,"w","val")??"",10):NaN;return {defaultTabStop:Number.isFinite(t)&&t>0&&t<=s?t:l}}export{l as a,p as b};

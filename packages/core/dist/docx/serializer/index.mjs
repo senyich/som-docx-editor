@@ -1,1 +1,0 @@
-export{f as serializeBlockContent,k as serializeComments,h as serializeDocument,g as serializeDocumentBody,p as serializeEndnotes,o as serializeFootnotes,i as serializeHeaderFooter,d as serializeParagraph,b as serializeRun,c as serializeSectionProperties,e as serializeTable}from'../../chunk-WWNOXNEX.mjs';import'../../chunk-LE67NTCN.mjs';import'../../chunk-QYUPLKLP.mjs';

@@ -1,1 +1,0 @@
-function t(){return Math.floor(Math.random()*2147483647).toString(16).toUpperCase().padStart(8,"0")}export{t as a};
