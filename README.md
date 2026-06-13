@@ -1,23 +1,24 @@
-"@som/docx-editor-core":"file:../som-docx-editor/packages/core",
+# SOM Docx Editor
 
-"@som/docx-editor-i18n":"file:../som-docx-editor/packages/i18n",
+## Сборка и подготовка к vendor-интеграции
 
-"@som/docx-editor-react":"file:../som-docx-editor/packages/react",
+Перед переносом библиотеки в папку vendor основного проекта убедитесь, что она корректно собрана.
 
-"prosemirror-commands":"^1.7.1",
+### Команды для сборки
 
-"prosemirror-dropcursor":"^1.8.2",
+Выполните `npm install` для установки зависимостей самой библиотеки, затем выполните `npm run build` для генерации папки dist.
 
-"prosemirror-history":"^1.5.0",
+### Что переносится в vendor
 
-"prosemirror-keymap":"^1.2.3",
+При синхронизации в папку vendor копируются только необходимые для работы файлы.
 
-"prosemirror-model":"^1.25.8",
+**Включаются:**
+- `package.json` с корректными полями main, module и types
+- папка `dist` со скомпилированными файлами
+- папка `src` если требуется отладка с исходниками
+- папка `types` если типы вынесены отдельно
 
-"prosemirror-state":"^1.4.4",
-
-"prosemirror-tables":"^1.8.5",
-
-"prosemirror-transform":"^1.12.0",
-
-"prosemirror-view":"^1.41.9",
+**Исключаются:**
+- папка `node_modules` - зависимости будут установлены заново в целевой среде
+- папка `.git` и файлы конфигурации CI/CD
+- исходники тестов и документация разработки (для экономии места)
