@@ -267,6 +267,10 @@ export interface TableAttrs {
   cellMargins?: { top?: number; bottom?: number; left?: number; right?: number };
   /** Table look flags for conditional formatting (w:tblLook) */
   look?: TableLook;
+  /** Table caption (alternative text for accessibility) */
+  caption?: string;
+  /** Table description (longer alternative text) */
+  description?: string;
   /** Original table formatting from DOCX for lossless round-trip serialization */
   _originalFormatting?: TableFormatting;
   /**

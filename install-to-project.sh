@@ -5,17 +5,14 @@
 
 set -e
 
-# Цвета для вывода
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
-NC='\033[0m' # No Color
+NC='\033[0m'
 
-# Путь к корню репозитория docx-editor
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Проверка аргументов
 if [ $# -eq 0 ]; then
     echo -e "${RED}Ошибка: Не указан путь к целевому проекту${NC}"
     echo "Использование: $0 /path/to/your/react-project"
@@ -24,13 +21,11 @@ fi
 
 TARGET_PROJECT="$1"
 
-# Проверка существования целевого проекта
 if [ ! -d "$TARGET_PROJECT" ]; then
     echo -e "${RED}Ошибка: Директория '$TARGET_PROJECT' не существует${NC}"
     exit 1
 fi
 
-# Проверка существования package.json в целевом проекте
 if [ ! -f "$TARGET_PROJECT/package.json" ]; then
     echo -e "${YELLOW}Предупреждение: В '$TARGET_PROJECT' не найден package.json${NC}"
     read -p "Продолжить anyway? (y/n) " -n 1 -r
@@ -42,7 +37,6 @@ fi
 
 echo -e "${BLUE}=== Установка @som/docx-editor в $TARGET_PROJECT ===${NC}"
 
-# Проверка собранных пакетов
 PACKAGES=("i18n" "core" "react")
 for pkg in "${PACKAGES[@]}"; do
     if [ ! -d "$REPO_ROOT/packages/$pkg/dist" ]; then
@@ -52,12 +46,10 @@ for pkg in "${PACKAGES[@]}"; do
     fi
 done
 
-# Создание директории vendor
 VENDOR_DIR="$TARGET_PROJECT/vendor/@som"
 echo -e "${BLUE}Создание директории $VENDOR_DIR...${NC}"
 mkdir -p "$VENDOR_DIR"
 
-# Копирование и настройка пакетов
 copy_package() {
     local pkg_name=$1
     local pkg_dir=$2
@@ -69,14 +61,11 @@ copy_package() {
 
     echo -e "${BLUE}Копирование $pkg_name...${NC}"
 
-    # Очистка старой версии
     rm -rf "$target_dir"
     mkdir -p "$target_dir"
 
-    # Копирование dist файлов
     cp -r "$REPO_ROOT/packages/$pkg_name/dist/"* "$target_dir/"
 
-    # Создание package.json
     cat > "$target_dir/package.json" << EOF
 {
   "name": "@som/$pkg_dir",
@@ -94,7 +83,6 @@ EOF
     echo -e "${GREEN}✓ $pkg_name установлен${NC}"
 }
 
-# I18N пакет
 copy_package "i18n" "docx-editor-i18n" '{
     ".": {
       "types": "./index.d.ts",
@@ -115,7 +103,6 @@ copy_package "i18n" "docx-editor-i18n" '{
     "typescript": "^5.0.0"
   }' 'false'
 
-# Core пакет
 copy_package "core" "docx-editor-core" '{
     ".": {
       "types": "./core.d.ts",
@@ -355,7 +342,6 @@ copy_package "core" "docx-editor-core" '{
     "prosemirror-view": "^1.41.8"
   }' 'false'
 
-# React пакет
 copy_package "react" "docx-editor-react" '{
     ".": {
       "types": "./index.d.ts",
@@ -402,7 +388,6 @@ copy_package "react" "docx-editor-react" '{
     "prosemirror-view": "^1.41.6"
   }' '["*.css"]'
 
-# Создание .gitignore для vendor
 echo -e "${BLUE}Создание .gitignore для vendor...${NC}"
 cat > "$TARGET_PROJECT/vendor/.gitignore" << 'EOF'
 # Vendor packages installed by install-to-project.sh
@@ -412,7 +397,6 @@ EOF
 
 echo -e "${GREEN}✓ .gitignore создан${NC}"
 
-# Вывод информации
 echo ""
 echo -e "${GREEN}=== Установка завершена успешно! ===${NC}"
 echo ""
@@ -436,9 +420,6 @@ echo "   npm install prosemirror-commands prosemirror-dropcursor prosemirror-his
 echo "     prosemirror-keymap prosemirror-model prosemirror-state prosemirror-tables \\"
 echo "     prosemirror-transform prosemirror-view"
 echo ""
-echo "3. ${BLUE}Использование в коде:${NC}"
-echo "   import { DocxEditor } from '@som/docx-editor-react';"
-echo "   import '@som/docx-editor-react/styles.css';"
 echo ""
 echo -e "${YELLOW}Примечание:${NC} Директория vendor/@som добавлена в .gitignore"
 echo "  Чтобы закоммитить пакеты в git, удали соответствующую строку из .gitignore"

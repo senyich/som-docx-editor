@@ -32,11 +32,12 @@ import type {
   FloatingTableProperties,
   BorderSpec,
   ShadingProperties,
-  Paragraph,
+  BlockContent,
 } from '../../types/document';
 
 import { serializeParagraph } from './paragraphSerializer';
 import { serializeConditionalFormatStyle } from './conditionalFormatSerializer';
+import { serializeBlockSdt } from './sdtSerializer';
 import { escapeXml, intAttr } from './xmlUtils';
 
 function normalizeTrackedChangeInfo(info: { id: number; author: string; date?: string }): {
@@ -446,7 +447,7 @@ export function serializeTableFormatting(
       parts.push(shadingXml);
     }
 
-    // Table look
+        // Table look
     const lookXml = serializeTableLook(formatting.look);
     if (lookXml) {
       parts.push(lookXml);
@@ -455,6 +456,16 @@ export function serializeTableFormatting(
     // Overlap
     if (formatting.overlap) {
       parts.push(`<w:tblOverlap w:val="${formatting.overlap}"/>`);
+    }
+
+    // Table caption (alternative text)
+    if (formatting.caption) {
+      parts.push(`<w:tblCaption>${escapeXml(formatting.caption)}</w:tblCaption>`);
+    }
+
+    // Table description (longer alternative text)
+    if (formatting.description) {
+      parts.push(`<w:tblDescription>${escapeXml(formatting.description)}</w:tblDescription>`);
     }
   }
 
@@ -734,17 +745,27 @@ function serializeTableGrid(columnWidths: number[] | undefined): string {
 // ============================================================================
 
 /**
- * Serialize cell content (paragraphs, nested tables)
+ * Serialize a single block content item
  */
-function serializeCellContent(content: (Paragraph | Table)[]): string {
+function serializeSingleBlockContent(child: BlockContent): string {
+  if (child.type === 'paragraph') {
+    return serializeParagraph(child);
+  } else if (child.type === 'table') {
+    return serializeTable(child);
+  } else if (child.type === 'blockSdt') {
+    return serializeBlockSdt(child, serializeSingleBlockContent);
+  }
+  return '';
+}
+
+/**
+ * Serialize cell content (paragraphs, nested tables, block-level SDTs)
+ */
+function serializeCellContent(content: BlockContent[]): string {
   const parts: string[] = [];
 
   for (const item of content) {
-    if (item.type === 'paragraph') {
-      parts.push(serializeParagraph(item));
-    } else if (item.type === 'table') {
-      parts.push(serializeTable(item));
-    }
+    parts.push(serializeSingleBlockContent(item));
   }
 
   // Ensure at least one empty paragraph (Word requires this)

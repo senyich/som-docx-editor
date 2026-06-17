@@ -45,7 +45,7 @@ import type {
 } from '../types/document';
 import type { StyleMap } from './styleParser';
 import type { NumberingMap } from './numberingParser';
-import { parseParagraph } from './paragraphParser';
+import { parseBlockContent } from './blockContentParser';
 import {
   findChild,
   findChildren,
@@ -148,13 +148,25 @@ export function parseTableProperties(tblPrElement: XmlElement | null): TableForm
     if (styleId) formatting.styleId = styleId;
   }
 
-  // Table look (w:tblLook)
+    // Table look (w:tblLook)
   const look = parseTableLook(findChild(tblPrElement, 'w', 'tblLook'));
   if (look) formatting.look = look;
 
   // Shading (w:shd)
   const shading = parseShading(findChild(tblPrElement, 'w', 'shd'));
   if (shading) formatting.shading = shading;
+
+  // Table caption (w:tblCaption) - alternative text for accessibility
+  const captionElement = findChild(tblPrElement, 'w', 'tblCaption');
+  if (captionElement?.text && typeof captionElement.text === 'string') {
+    formatting.caption = captionElement.text;
+  }
+
+  // Table description (w:tblDescription) - longer alternative text
+  const descriptionElement = findChild(tblPrElement, 'w', 'tblDescription');
+  if (descriptionElement?.text && typeof descriptionElement.text === 'string') {
+    formatting.description = descriptionElement.text;
+  }
 
   // Table overlap (w:tblOverlap)
   const overlapElement = findChild(tblPrElement, 'w', 'tblOverlap');
@@ -556,27 +568,8 @@ function parseCellContent(
   media: Map<string, MediaFile> | null,
   options?: { inHeaderFooter?: boolean }
 ): (Paragraph | Table)[] {
-  const content: (Paragraph | Table)[] = [];
-
-  // Get all child elements
-  const elements = tcElement.elements || [];
-
-  for (const child of elements) {
-    if (!child.name) continue;
-
-    const localName = child.name.split(':').pop();
-
-    if (localName === 'p') {
-      // Parse paragraph
-      const para = parseParagraph(child, styles, theme, numbering, rels, media, options);
-      content.push(para);
-    } else if (localName === 'tbl') {
-      // Parse nested table (recursive)
-      const table = parseTable(child, styles, theme, numbering, rels, media, options);
-      content.push(table);
-    }
-    // Other content types in cells are rare but could be added
-  }
+  // Use parseBlockContent to properly handle all content types including block-level SDTs
+  const content = parseBlockContent(tcElement, styles, theme, numbering, rels, media, options);
 
   // Ensure at least one empty paragraph (Word requires this)
   if (content.length === 0) {
@@ -586,7 +579,7 @@ function parseCellContent(
     });
   }
 
-  return content;
+  return content as (Paragraph | Table)[];
 }
 
 // ============================================================================

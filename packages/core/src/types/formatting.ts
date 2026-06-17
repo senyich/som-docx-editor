@@ -459,6 +459,10 @@ export interface TableFormatting {
   floating?: FloatingTableProperties;
   /** Right to left table */
   bidi?: boolean;
+  /** Table caption (alternative text for accessibility) */
+  caption?: string;
+  /** Table description (longer alternative text) */
+  description?: string;
 }
 
 /**

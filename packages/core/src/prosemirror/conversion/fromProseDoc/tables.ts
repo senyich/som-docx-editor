@@ -253,6 +253,13 @@ function tableAttrsToFormatting(attrs: TableAttrs): TableFormatting | undefined 
     if (attrs.look !== (orig.look || undefined)) {
       result.look = attrs.look || undefined;
     }
+    // Caption and description: preserve from original if not changed, or use new values
+    if (attrs.caption !== undefined) {
+      result.caption = attrs.caption;
+    }
+    if (attrs.description !== undefined) {
+      result.description = attrs.description;
+    }
     // Width: check if changed
     const origWidthVal = orig.width?.value;
     const origWidthType = orig.width?.type;
@@ -291,7 +298,7 @@ function tableAttrsToFormatting(attrs: TableAttrs): TableFormatting | undefined 
     return result;
   }
 
-  // Fallback: reconstruct formatting from individual attrs (e.g. for
+    // Fallback: reconstruct formatting from individual attrs (e.g. for
   // newly created tables that don't have _originalFormatting)
   const hasFormatting =
     attrs.styleId ||
@@ -300,7 +307,9 @@ function tableAttrsToFormatting(attrs: TableAttrs): TableFormatting | undefined 
     attrs.justification ||
     attrs.floating ||
     attrs.cellMargins ||
-    attrs.look;
+    attrs.look ||
+    attrs.caption ||
+    attrs.description;
 
   if (!hasFormatting) {
     return undefined;
@@ -344,6 +353,8 @@ function tableAttrsToFormatting(attrs: TableAttrs): TableFormatting | undefined 
     floating: attrs.floating || undefined,
     cellMargins,
     look: attrs.look || undefined,
+    caption: attrs.caption || undefined,
+    description: attrs.description || undefined,
   };
 }
 

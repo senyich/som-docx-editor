@@ -4,6 +4,7 @@
 
 import type { TableFormatting, TableRowFormatting, TableCellFormatting } from '../formatting';
 import type { Paragraph } from './paragraph';
+import type { BlockSdt } from './sdt';
 import type {
   TablePropertyChange,
   TableRowPropertyChange,
@@ -25,8 +26,8 @@ export interface TableCell {
   propertyChanges?: TableCellPropertyChange[];
   /** Tracked structural changes (cell insert/delete/merge) */
   structuralChange?: TableStructuralChangeInfo;
-  /** Cell content (paragraphs, tables, etc.) */
-  content: (Paragraph | Table)[];
+    /** Cell content (paragraphs, tables, block SDTs, etc.) */
+  content: (Paragraph | Table | BlockSdt)[];
 }
 
 /**

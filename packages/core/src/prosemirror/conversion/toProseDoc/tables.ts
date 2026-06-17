@@ -233,7 +233,7 @@ export function convertTable(
       }
     : undefined;
 
-  const attrs: TableAttrs = {
+    const attrs: TableAttrs = {
     styleId: table.formatting?.styleId,
     width: table.formatting?.width?.value,
     widthType: table.formatting?.width?.type,
@@ -242,6 +242,8 @@ export function convertTable(
     floating: table.formatting?.floating,
     cellMargins: cellMarginsAttr,
     look: table.formatting?.look,
+    caption: table.formatting?.caption,
+    description: table.formatting?.description,
     _originalFormatting: table.formatting || undefined,
   };
   // Table-property change history (`<w:tblPrChange>`).
