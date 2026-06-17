@@ -24,29 +24,10 @@ import type { TableAttrs, TableRowAttrs, TableCellAttrs } from '../../schema/nod
 import { convertPMParagraph } from './paragraph';
 
 function inferTableBorders(rows: TableRow[]): TableBorders | undefined {
-  for (const row of rows) {
-    for (const cell of row.cells) {
-      const borders = cell.formatting?.borders;
-      if (borders) {
-        const base =
-          borders.top ||
-          borders.left ||
-          borders.right ||
-          borders.bottom ||
-          borders.insideH ||
-          borders.insideV;
-        if (!base) return undefined;
-        return {
-          top: borders.top ?? base,
-          bottom: borders.bottom ?? base,
-          left: borders.left ?? base,
-          right: borders.right ?? base,
-          insideH: borders.insideH ?? borders.bottom ?? base,
-          insideV: borders.insideV ?? borders.right ?? base,
-        };
-      }
-    }
-  }
+  // Borders must only come from explicit source data (e.g. _originalFormatting).
+  // Inferring them from partial cell borders causes hidden borders to become
+  // visible on round-trip: a cell with only a bottom border would incorrectly
+  // propagate that style to all sides of the table.
   return undefined;
 }
 
