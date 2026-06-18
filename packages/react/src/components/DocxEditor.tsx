@@ -542,6 +542,7 @@ export const DocxEditor = forwardRef<DocxEditorRef, DocxEditorProps>(function Do
     toolbarLeftExtra,
     showEditingMode = true,
     hideHelpMenu = false,
+    stickyToolbar = false,
     className = '',
     style,
     placeholder,
@@ -1604,6 +1605,7 @@ export const DocxEditor = forwardRef<DocxEditorRef, DocxEditorProps>(function Do
             toolbarLeftExtra={toolbarLeftExtra}
             showEditingMode={showEditingMode}
             hideHelpMenu={hideHelpMenu}
+            stickyToolbar={stickyToolbar}
             fontFamilies={fontFamilies}
             zoom={state.zoom}
             showZoomControl={showZoomControl}

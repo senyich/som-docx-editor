@@ -12,6 +12,7 @@ import { EditingModeDropdown } from './EditingModeDropdown';
 import { AgentPanelToggle } from './AgentPanelToggle';
 import type { EditorMode } from './internals/editing-modes';
 import type { AgentPanelOptions } from './types';
+import { cn } from '../lib/utils';
 
 interface ImageContext {
   pos: number;
@@ -72,6 +73,8 @@ export function DocxEditorToolbar({
   // Visibility flags
   showEditingMode,
   hideHelpMenu,
+  // Sticky toolbar
+  stickyToolbar,
   zoom,
   showZoomControl,
   // Handlers
@@ -120,6 +123,7 @@ export function DocxEditorToolbar({
   fontFamilies: ReadonlyArray<string | FontOption> | undefined;
   showEditingMode: boolean;
   hideHelpMenu: boolean;
+  stickyToolbar?: boolean;
   zoom: number;
   showZoomControl: boolean;
   onFormat: (action: FormattingAction) => void;
@@ -148,7 +152,13 @@ export function DocxEditorToolbar({
   };
 
   return (
-    <div ref={toolbarRefCallback} className="z-50 flex flex-col gap-0 flex-shrink-0">
+    <div
+      ref={toolbarRefCallback}
+      className={cn(
+        'z-50 flex flex-col gap-0 flex-shrink-0',
+        stickyToolbar && 'sticky top-0'
+      )}
+    >
       <EditorToolbar
         className={agentPanelOpen ? 'rounded-br-2xl' : undefined}
         style={toolbarStyle}
