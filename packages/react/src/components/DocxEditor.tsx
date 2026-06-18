@@ -158,8 +158,14 @@ export interface DocxEditorProps {
    * This lets the browser or host app handle native find/history shortcuts.
    */
   disableFindReplaceShortcuts?: boolean;
-  /** Custom toolbar actions */
+  /** Custom toolbar actions rendered at the end of the toolbar */
   toolbarExtra?: ReactNode;
+  /** Custom toolbar actions rendered at the start of the toolbar (left side) */
+  toolbarLeftExtra?: ReactNode;
+  /** Whether to show the editing mode dropdown (editing/suggesting/viewing). Default: true */
+  showEditingMode?: boolean;
+  /** Whether to hide the Help menu from the menu bar. Default: false */
+  hideHelpMenu?: boolean;
   /** Additional CSS class name */
   className?: string;
   /** Additional inline styles */
@@ -533,6 +539,9 @@ export const DocxEditor = forwardRef<DocxEditorRef, DocxEditorProps>(function Do
     readOnly: readOnlyProp = false,
     disableFindReplaceShortcuts = false,
     toolbarExtra,
+    toolbarLeftExtra,
+    showEditingMode = true,
+    hideHelpMenu = false,
     className = '',
     style,
     placeholder,
@@ -1592,6 +1601,9 @@ export const DocxEditor = forwardRef<DocxEditorRef, DocxEditorProps>(function Do
             documentNameEditable={documentNameEditable}
             renderTitleBarRight={renderTitleBarRight}
             toolbarExtra={toolbarExtra}
+            toolbarLeftExtra={toolbarLeftExtra}
+            showEditingMode={showEditingMode}
+            hideHelpMenu={hideHelpMenu}
             fontFamilies={fontFamilies}
             zoom={state.zoom}
             showZoomControl={showZoomControl}

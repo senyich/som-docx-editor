@@ -107,7 +107,11 @@ export function TitleBarRight({ children }: TitleBarRightProps) {
 // MenuBar
 // ============================================================================
 
-export function MenuBar() {
+interface MenuBarProps {
+  hideHelpMenu?: boolean;
+}
+
+export function MenuBar({ hideHelpMenu = false }: MenuBarProps) {
   const { t } = useTranslation();
   const ctx = useEditorToolbar();
   const {
@@ -272,16 +276,18 @@ export function MenuBar() {
       />
 
       {/* Help Menu */}
-      <MenuDropdown
-        label={t('toolbar.help')}
-        disabled={disabled}
-        items={[
-          {
-            label: t('toolbar.reportIssue'),
-            onClick: () => openReportIssue(),
-          } as MenuEntry,
-        ]}
-      />
+      {!hideHelpMenu && (
+        <MenuDropdown
+          label={t('toolbar.help')}
+          disabled={disabled}
+          items={[
+            {
+              label: t('toolbar.reportIssue'),
+              onClick: () => openReportIssue(),
+            } as MenuEntry,
+          ]}
+        />
+      )}
     </div>
   );
 }

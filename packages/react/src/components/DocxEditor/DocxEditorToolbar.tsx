@@ -67,7 +67,11 @@ export function DocxEditorToolbar({
   documentNameEditable,
   renderTitleBarRight,
   toolbarExtra,
+  toolbarLeftExtra,
   fontFamilies,
+  // Visibility flags
+  showEditingMode,
+  hideHelpMenu,
   zoom,
   showZoomControl,
   // Handlers
@@ -112,7 +116,10 @@ export function DocxEditorToolbar({
   documentNameEditable: boolean | undefined;
   renderTitleBarRight: (() => ReactNode) | undefined;
   toolbarExtra: ReactNode;
+  toolbarLeftExtra: ReactNode;
   fontFamilies: ReadonlyArray<string | FontOption> | undefined;
+  showEditingMode: boolean;
+  hideHelpMenu: boolean;
   zoom: number;
   showZoomControl: boolean;
   onFormat: (action: FormattingAction) => void;
@@ -188,9 +195,10 @@ export function DocxEditorToolbar({
           {renderTitleBarRight && (
             <EditorToolbar.TitleBarRight>{renderTitleBarRight()}</EditorToolbar.TitleBarRight>
           )}
-          <EditorToolbar.MenuBar />
+          <EditorToolbar.MenuBar hideHelpMenu={hideHelpMenu} />
         </EditorToolbar.TitleBar>
         <EditorToolbar.Toolbar>
+          {toolbarLeftExtra}
           <ToolbarSeparator />
           <CommentsSidebarToggle
             active={showCommentsSidebar}
@@ -202,13 +210,15 @@ export function DocxEditorToolbar({
             }}
           />
           <ToolbarSeparator />
-          <EditingModeDropdown
-            mode={editingMode}
-            onModeChange={(mode) => {
-              setEditingMode(mode);
-              if (mode === 'suggesting') setShowCommentsSidebar(true);
-            }}
-          />
+          {showEditingMode && (
+            <EditingModeDropdown
+              mode={editingMode}
+              onModeChange={(mode) => {
+                setEditingMode(mode);
+                if (mode === 'suggesting') setShowCommentsSidebar(true);
+              }}
+            />
+          )}
           {agentPanel && agentPanel.showToolbarButton !== false && (
             <>
               <ToolbarSeparator />
