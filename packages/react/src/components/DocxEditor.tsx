@@ -166,6 +166,8 @@ export interface DocxEditorProps {
   showEditingMode?: boolean;
   /** Whether to hide the Help menu from the menu bar. Default: false */
   hideHelpMenu?: boolean;
+  /** Whether to make the toolbar sticky (fixed at top). Default: false */
+  stickyToolbar?: boolean;
   /** Additional CSS class name */
   className?: string;
   /** Additional inline styles */

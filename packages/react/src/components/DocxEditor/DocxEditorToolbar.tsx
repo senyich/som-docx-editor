@@ -12,7 +12,7 @@ import { EditingModeDropdown } from './EditingModeDropdown';
 import { AgentPanelToggle } from './AgentPanelToggle';
 import type { EditorMode } from './internals/editing-modes';
 import type { AgentPanelOptions } from './types';
-import { cn } from '../lib/utils';
+import { cn } from '../../lib/utils';
 
 interface ImageContext {
   pos: number;
