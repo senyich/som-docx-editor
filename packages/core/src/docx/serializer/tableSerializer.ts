@@ -100,8 +100,14 @@ function serializeMeasurement(
  * Serialize a single border element
  */
 function serializeBorder(border: BorderSpec | undefined, elementName: string): string {
-  if (!border || border.style === 'none' || border.style === 'nil') {
+  if (!border) {
     return '';
+  }
+
+  // Explicitly serialize 'none'/'nil' borders so Word knows to hide them.
+  // Omitting the element entirely would cause default borders to appear.
+  if (border.style === 'none' || border.style === 'nil') {
+    return `<w:${elementName} w:val="${border.style}"/>`;
   }
 
   const attrs: string[] = [`w:val="${border.style}"`];

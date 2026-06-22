@@ -12,8 +12,9 @@
 
 import type { Node as PMNode } from 'prosemirror-model';
 import type { Command } from 'prosemirror-state';
+import { CellSelection } from 'prosemirror-tables';
 import { getTableContext } from '../context';
-import { buildTableGrid, getTargetCellPositions } from './helpers';
+import { buildTableGrid, getTargetCellPositions, getAllTableCellPositions } from './helpers';
 
 export type BorderPreset = 'all' | 'outside' | 'inside' | 'none';
 export type BorderSpec = { style: string; size: number; color: { rgb: string } };
@@ -48,7 +49,11 @@ export function setTableBorders(preset: BorderPreset, borderSpec?: BorderSpec): 
       const { cellByPos, cellByRC } = buildTableGrid(table, tableStart);
 
       // Get target cells — selection or cursor cell
-      const targetCells = getTargetCellPositions(state);
+      // For 'none' preset: apply to entire table if no cell selection
+      const targetCells =
+        preset === 'none' && !(state.selection instanceof CellSelection)
+          ? getAllTableCellPositions(table, tableStart)
+          : getTargetCellPositions(state);
 
       // Determine grid bounds of the target cells for outside/inside presets
       let minRow = Infinity,

@@ -17,6 +17,24 @@ import type { Node as PMNode } from 'prosemirror-model';
 import type { EditorState } from 'prosemirror-state';
 import { CellSelection } from 'prosemirror-tables';
 
+/**
+ * Get all cell positions in the table
+ */
+export function getAllTableCellPositions(
+  table: PMNode,
+  tableStart: number
+): { pos: number; node: PMNode }[] {
+  const cells: { pos: number; node: PMNode }[] = [];
+  table.forEach((row, rowOffset) => {
+    if (row.type.name !== 'tableRow') return;
+    row.forEach((cell, cellOffset) => {
+      const pos = tableStart + rowOffset + cellOffset + 2;
+      cells.push({ pos, node: cell });
+    });
+  });
+  return cells;
+}
+
 export function buildCellAttrsFromTemplate(
   templateCell: PMNode | null,
   overrides: Record<string, unknown> = {}
