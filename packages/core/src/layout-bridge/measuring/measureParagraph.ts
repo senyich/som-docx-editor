@@ -194,6 +194,19 @@ function calculateTypographyMetrics(
     lineHeight = singleLineBase * DEFAULT_LINE_HEIGHT_MULTIPLIER;
   }
 
+  // Apply Word's "single line spacing" floor for auto/atLeast line rules.
+  // Without this floor, narrow-metric fonts (OS/2 ratio < 1.15) can produce
+  // lineHeight smaller than the browser's actual rendered height, causing
+  // text overlap when fragments are positioned absolutely based on the
+  // calculated layout.
+  const lineRule = spacing?.lineRule ?? 'auto';
+  if (lineRule === 'auto' || lineRule === 'atLeast') {
+    const floored = Math.max(lineHeight, fontSizePx * WORD_SINGLE_LINE_FLOOR);
+    if (floored !== lineHeight) {
+      lineHeight = floored;
+    }
+  }
+
   return { ascent, descent, lineHeight };
 }
 
