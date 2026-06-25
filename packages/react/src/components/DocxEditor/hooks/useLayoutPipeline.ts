@@ -24,7 +24,7 @@ import {
   type PageMargins,
   type SectionBreakBlock,
 } from '@som/docx-editor-core/layout-engine';
-import { toFlowBlocks } from '@som/docx-editor-core/layout-bridge';
+import { toFlowBlocks, clearParagraphMeasureCache, resetCanvasContext } from '@som/docx-editor-core/layout-bridge';
 import {
   buildFootnoteContentMap,
   buildFootnoteRenderItems,
@@ -169,6 +169,13 @@ export function useLayoutPipeline(opts: UseLayoutPipelineOptions): UseLayoutPipe
     lastTotalPagesRef.current = total;
     onTotalPagesChangeRef.current?.(total);
   }, [layout]);
+
+  // Reset measurement caches when document changes to prevent stale layout
+  // when template fields are replaced with large content (e.g., pvusl field).
+  useEffect(() => {
+    clearParagraphMeasureCache();
+    resetCanvasContext();
+  }, [document]);
 
   // Page geometry derived from section properties.
   const pageSize = useMemo(() => getPageSize(sectionProperties), [sectionProperties]);
